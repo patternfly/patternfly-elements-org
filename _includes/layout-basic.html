@@ -1,0 +1,34 @@
+---
+layout: layout-base.html
+---
+<header>
+  <div class="logo-bar">
+    <a href="/">PatternFly Elements</a>
+  </div>
+  <input id="mobile-menu-toggle" class="menu-toggle element-invisible" type="checkbox" aria-controls="mobile-menu-menu-container">
+  <label class="menu-toggle__button l-header__mobile-menu-toggle" for="mobile-menu-toggle" data-controls="mobile-menu-menu-container">
+    <span class="l-header__burger-icon"></span>
+    <span class="menu-toggle-assistive-text element-invisible">Toggle menu visibility</span>
+  </label>
+  <div class="menu-toggle__toggleable site-navigation__outer-wrapper">
+    <nav class="l-header__site-navigation site-navigation menu-toggle__toggleable-content-wrapper">
+      <ul class="site-navigation__wrapper">
+        <li class="site-navigation__item">
+          <details{% if page.url contains "components/" %} open{% endif %}>
+            <summary class="site-navigation__heading">Components</summary>
+            <ul class="site-navigation__sub-menu">
+              {%- for component in collections.component -%}
+              <li class="site-navigation__sub-menu__item">
+                <a class="site-navigation__sub-menu__link{% if page.url == component.url %} site-navigation__sub-menu__link--active{% endif %}" href="{{ component.url }}">{{ component.data.title }}</a>
+              </li>
+              {%- endfor -%}
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="basic">
+  {{ content | safe }}
+</main>
