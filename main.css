@@ -2,6 +2,8 @@ html,
 body {
   margin: 0;
   font-family: 'Red Hat Text', sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
 }
 
 *, *::before, *::after {
@@ -281,6 +283,10 @@ main.basic {
   visibility: visible;
   transition: visibility 0s 0s,width .25s ease-in-out;
   width: 17.5rem;
+}
+
+.faux-band {
+  padding: 16px;
 }
 
 @media (min-width: 500px) {
