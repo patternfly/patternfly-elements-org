@@ -1,7 +1,7 @@
 ---
 layout: layout-basic.html
-title: Call to action
-package: pfe-cta
+title: Dropdown
+package: pfe-dropdown
 tags:
   - component
 ---

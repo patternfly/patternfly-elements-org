@@ -1,7 +1,7 @@
 ---
 layout: layout-basic.html
-title: Call to action
-package: pfe-cta
+title: Toast
+package: pfe-toast
 tags:
   - component
 ---

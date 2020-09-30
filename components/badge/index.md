@@ -1,7 +1,7 @@
 ---
 layout: layout-basic.html
-title: Call to action
-package: pfe-cta
+title: Badge
+package: pfe-badge
 tags:
   - component
 ---

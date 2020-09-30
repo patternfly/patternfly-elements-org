@@ -19,8 +19,29 @@ h1 {
   font-size: 36px;
 }
 
+pfe-band {
+  --pfe-band--gutter--vertical: 8px;
+}
+
+pfe-band.header h1 {
+  margin: 0;
+}
+
+pfe-band h2 {
+  font-size: 1.5rem;
+  line-height: 1.9375rem;
+}
+
+pfe-band h1 + p,
+pfe-band h2 + p,
+pfe-band h3 + p,
+pfe-band h4 + p {
+  margin-top: 0;
+}
+
 main.basic {
   margin-top: 3.75rem;
+  margin-bottom: 3.75rem;
 }
 
 .tagline {
@@ -306,6 +327,13 @@ main.basic {
   [id=mobile-menu-toggle]~.menu-toggle__toggleable {
     overflow: visible;
     visibility: visible;
+  }
+}
+
+@media (min-width: 1200px) {
+  pfe-band h2 {
+    font-size: 1.75rem;
+    line-height: 2.3125rem;
   }
 }
 

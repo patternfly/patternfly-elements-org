@@ -5,4 +5,6 @@ tags:
   - component
 ---
 
+::: section header
 # Components
+:::

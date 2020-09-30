@@ -1,7 +1,7 @@
 ---
 layout: layout-basic.html
-title: Call to action
-package: pfe-cta
+title: Page status
+package: pfe-page-status
 tags:
   - component
 ---

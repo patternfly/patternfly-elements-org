@@ -18,6 +18,8 @@
   },
   "dependencies": {
     "@patternfly/pfe-accordion": "^1.0.0-prerelease.56",
+    "@patternfly/pfe-autocomplete": "^1.0.0-prerelease.56",
+    "@patternfly/pfe-avatar": "^1.0.0-prerelease.56",
     "@patternfly/pfe-band": "^1.0.0-prerelease.56",
     "@patternfly/pfe-button": "^1.0.0-prerelease.56",
     "@patternfly/pfe-card": "^1.0.0-prerelease.56",

@@ -4,6 +4,26 @@ let markdownItAnchor = require("markdown-it-anchor");
 let markdownItContainer = require("markdown-it-container");
 
 module.exports = function (eleventyConfig) {
+  /**
+   * Collections to organize by alphabetical instead of date
+   */
+  const tagsToAlphabetize = [
+    'component'
+  ];
+
+  for (let i = 0; i < tagsToAlphabetize.length; i++) {
+    const tag = tagsToAlphabetize[i];
+
+    eleventyConfig.addCollection(tag, collection => {
+      return collection.getFilteredByTag(tag).sort((a, b) => {
+        if (a.data.title === "All components" || b.data.title === "All components") { return; }
+        if (a.data.title < b.data.title) { return -1; }
+        if (a.data.title > b.data.title) { return 1; }
+        return 0;
+      });
+    });
+  }
+
   eleventyConfig.setTemplateFormats([
     "html",
     "md",
@@ -33,9 +53,10 @@ module.exports = function (eleventyConfig) {
       let m = tokens[idx].info.trim().match(/^section+(.*)$/);
       let color = m && m[1].trim() === "header" ? "" : "lightest";
       let size = m && m[1].trim() === "header" ? "" : "small";
+      let classes = m && m[1].trim() === "header" ? `class="header"` : "";
 
       if (tokens[idx].nesting === 1) {
-        return `<pfe-band pfe-size="${size}" pfe-color="${color}">`
+        return `<pfe-band pfe-size="${size}" pfe-color="${color}"${classes}>`
       } else {
         return `</pfe-band>\n`;
       }

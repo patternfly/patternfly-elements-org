@@ -1,7 +1,7 @@
 ---
 layout: layout-basic.html
-title: Call to action
-package: pfe-cta
+title: Health index
+package: pfe-health-index
 tags:
   - component
 ---
