@@ -27,6 +27,9 @@
     "@patternfly/pfe-collapse": "^1.0.0-prerelease.56",
     "@patternfly/pfe-content-set": "^1.0.0-prerelease.56",
     "@patternfly/pfe-cta": "^1.0.0-prerelease.56",
+    "@patternfly/pfe-datetime": "^1.0.0-prerelease.56",
+    "@patternfly/pfe-dropdown": "^1.0.0-prerelease.56",
+    "@patternfly/pfe-health-index": "^1.0.0-prerelease.56",
     "@patternfly/pfe-select": "^1.0.0-prerelease.56",
     "@patternfly/pfe-styles": "^1.0.0-prerelease.56",
     "@patternfly/pfe-tabs": "^1.0.0-prerelease.56"
