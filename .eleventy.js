@@ -29,7 +29,8 @@ module.exports = function (eleventyConfig) {
     "md",
     "css",
     "js",
-    "svg"
+    "svg",
+    "png"
   ]);
 
   eleventyConfig.setBrowserSyncConfig({

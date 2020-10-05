@@ -6,6 +6,7 @@ tags:
   - component
 ---
 <script type="module" src="/node_modules/@patternfly/{{ package }}/dist/{{ package }}.min.js"></script>
+<script type="module" src="/node_modules/@patternfly/pfe-cta/dist/pfe-cta.min.js"></script>
 
 ::: section header
 # {{ title }}
@@ -13,6 +14,14 @@ tags:
 
 ::: section
 ## Overview
+Page Status creates a flag/banner on the right side of the page denoting the status of the page or document the author is viewing.
+
+<img src="page-status-demo.png" style="max-width: 100%">
+<br>
+
+<pfe-cta>
+  <a href="demo">View the demo</a>
+</pfe-cta>
 :::
 
 ::: section
@@ -27,26 +36,58 @@ npm install @patternfly/{{ package }}
 ## Usage
 
 ```html
-
+<pfe-page-status pfe-status="critical">
+  Previewing
+</pfe-page-status>
 ```
 :::
 
 ::: section
 ## Slots
+### default slot
+Content in the default slot will be used as the text for the banner on the right side of the page.
 :::
 
 ::: section
 ## Attributes
+### pfe-status
+Controls the background color of the banner.
+
+Values
+- moderate
+- warning
+- important
+- critical
+- success
+- info
+- normal
+- accent
+- complement
 :::
 
 ::: section
 ## Methods
+None
 :::
 
 ::: section
 ## Events
+None
 :::
 
 ::: section
 ## Styling hooks
+| Option | Theme Color Variable |
+| ------ | -------------------- |
+| default | `--pfe-theme--color--feedback--default` |
+| `moderate` | `--pfe-theme--color--feedback--moderate` |
+| `warning` | *Same as `moderate`* |
+| `important` | `--pfe-theme--color--feedback--important` |
+| `critical` | `--pfe-theme--color--feedback--critical` |
+| `success` | `--pfe-theme--color--feedback--success` |
+| `info` | `--pfe-theme--color--feedback--info` |
+| `normal` | `--pfe-theme--color--ui-accent` |
+| `accent` | `--pfe-theme--color--ui-accent` |
+| `complement` | `--pfe-theme--color--ui-base` |
+
 :::

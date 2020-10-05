@@ -17,7 +17,7 @@ Health index shows a health grade in either a default, mini, or large variation.
 
 <div class="pfe-l-grid pfe-m-gutters pfe-m-all-4-col">
   <section>
-    <h2>Default</h2>
+    <h3>Default</h3>
     <div>
       <pfe-health-index health-index="A">A</pfe-health-index>
     </div>
@@ -39,7 +39,7 @@ Health index shows a health grade in either a default, mini, or large variation.
   </section>
 
   <section>
-    <h2>Mini</h2>
+    <h3>Mini</h3>
     <div>
       <pfe-health-index health-index="A" size="mini">A</pfe-health-index>
     </div>
@@ -61,7 +61,7 @@ Health index shows a health grade in either a default, mini, or large variation.
   </section>
 
   <section>
-    <h2>Large</h2>
+    <h3>Large</h3>
     <div>
       <pfe-health-index health-index="A" size="lg">A</pfe-health-index>
     </div>
