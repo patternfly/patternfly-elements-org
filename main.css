@@ -350,7 +350,7 @@ main.basic {
   --pfe-theme--surface--border-radius : 15px;
   --pfe-theme--base--heading-lg: 22px;
   --pfe-theme--color--link: #4a0c85;
-  --pfe-theme--color--surface--lightest: #ededed;
+  --pfe-theme--color--surface--lightest: #e8e8e7;
   --pfe-theme--color--ui-accent: #4a0c85;
 }
 #themeable-section.theme-2 pfe-cta[pfe-priority=secondary] {
