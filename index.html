@@ -6,17 +6,20 @@ githubLink: https://github.com/patternfly/patternfly-elements
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#004080">
   <title>{{ title }}</title>
   <meta name="description" content="{{ title }} - {{ description }}">
-  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&family=Red+Hat+Text&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/main.css">
-  <link rel="stylesheet" href="/prism.css">
-  <link rel="stylesheet" href="/node_modules/@patternfly/pfelement/dist/pfelement.min.css">
-  <link rel="stylesheet" href="/node_modules/@patternfly/pfe-styles/dist/pfe-layouts.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&family=Red+Hat+Text&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/main.css">
+  <link rel="stylesheet" type="text/css" href="/prism.css">
+  <link rel="stylesheet" type="text/css" href="/node_modules/@patternfly/pfelement/dist/pfelement.min.css">
+  <link rel="stylesheet" type="text/css" href="/node_modules/@patternfly/pfe-styles/dist/pfe-layouts.min.css">
+  <link rel="stylesheet" type="text/css" href="/node_modules/@patternfly/pfe-styles/dist/pfe-base.min.css">
   <script type="module">
     import "./node_modules/@patternfly/pfe-band/dist/pfe-band.min.js";
     import "./node_modules/@patternfly/pfe-card/dist/pfe-card.min.js";
@@ -27,6 +30,7 @@ githubLink: https://github.com/patternfly/patternfly-elements
   </script>
   <script src="/prism.js"></script>
 </head>
+
 <body unresolved>
   <header>
     <pfe-band class="pfe-l--text-align--center" pfe-color="accent">
@@ -74,9 +78,12 @@ githubLink: https://github.com/patternfly/patternfly-elements
 &lt;/pfe-card&gt;</code></pre>
             </div>
           </div>
-          <pfe-card class="pfe-l-grid__item pfe-m-12-col pfe-m-6-col-on-md pfe-m-4-col-on-lg" pfe-color="lightest" pfe-border>
+          <pfe-card class="pfe-l-grid__item pfe-m-12-col pfe-m-6-col-on-md pfe-m-4-col-on-lg" pfe-color="lightest"
+            pfe-border>
             <h2 slot="pfe-card--header">Card component</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quam alias ducimus, amet iure quae earum, saepe labore repellendus culpa ut eligendi ipsa repudiandae? Provident similique libero harum officiis atque!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quam alias ducimus, amet iure quae
+              earum, saepe labore repellendus culpa ut eligendi ipsa repudiandae? Provident similique libero harum
+              officiis atque!</p>
             <div slot="pfe-card--footer">
               <pfe-cta>
                 <a href="components/card">More about the card component</a>
@@ -157,64 +164,115 @@ export default function App() {
           <h2 id="themeable" class="pfe-l-grid__item pfe-m-12-col pfe-m-9-col-on-md">Themeable</h2>
           <pfe-select class="pfe-l-grid__item pfe-m-12-col pfe-m-3-col-on-md">
             <select>
-              <option value="">Select a theme</option>
               <option value="theme-1">Theme 1</option>
               <option value="theme-2">Theme 2</option>
               <option value="theme-3">Theme 3</option>
             </select>
           </pfe-select>
         </div>
-        <p>Theming PatternFly Elements can be done at the global level or you can target specific components.</p>
+        <p>Make PFE components your own by defining a custom theme palette. There are a variety of global CSS custom
+          properties which cascade into more specific custom properties, per component.</p>
         <div class="pfe-l-grid pfe-m-gutters pfe-m-all-4-col-on-xl pfe-m-all-6-col-on-lg pfe-m-all-6-col-on-sm">
-          <pfe-card>
-            <h3 slot="pfe-card--header">Thing 1</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam nulla autem labore, debitis nesciunt impedit quidem. Iste, praesentium earum quisquam tempore inventore hic autem, dolorem eos fugiat at magnam. Optio.</p>
-            <div slot="pfe-card--footer">
-              <pfe-cta>
-                <a href="#">Link 1</a>
-              </pfe-cta>
-            </div>
-          </pfe-card>
-          <pfe-card>
-            <h3 slot="pfe-card--header">Thing 2</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat esse nam vitae! Maiores, rerum. Non, qui dolore ex soluta exercitationem fuga asperiores natus illo nobis? Expedita modi fuga qui praesentium.</p>
-            <div slot="pfe-card--footer">
-              <pfe-cta>
-                <a href="#">Link 2</a>
-              </pfe-cta>
-            </div>
-          </pfe-card>
-          <pfe-card>
-            <h3 slot="pfe-card--header">Thing 3</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, modi qui ipsam dolore unde quis doloremque natus corrupti ullam numquam laudantium voluptatibus assumenda alias recusandae vel voluptatum temporibus a soluta?</p>
-            <div slot="pfe-card--footer">
-              <pfe-cta>
-                <a href="#">Link 3</a>
-              </pfe-cta>
-            </div>
-          </pfe-card>
+          <div>
+            <pfe-card class="card-1" pfe-color="darkest">
+              <h3 slot="pfe-card--header">Card 1</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <a href="http://fdsafdafdsa.com">A regular
+                  link</a>, <a href="">or a visited one</a>. Non, qui dolore ex soluta exercitationem fuga asperiores
+                natus illo nobis? Expedita modi
+                fuga qui praesentium.</p>
+              <div slot="pfe-card--footer">
+                <pfe-cta>
+                  <a href="#">Link 1</a>
+                </pfe-cta>
+              </div>
+            </pfe-card>
+
+
+          </div>
+          <div>
+
+            <pfe-card class="card-2" pfe-color="accent">
+              <h3 slot="pfe-card--header">Card 2</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <a href="http://fdsafdafdsa.com">A regular
+                  link</a>, <a href="">or a visited one</a>. Non,
+                qui dolore ex soluta exercitationem fuga asperiores natus illo nobis? Expedita modi fuga qui
+                praesentium.</p>
+              <div slot="pfe-card--footer">
+                <pfe-cta>
+                  <a href="#">Link 2</a>
+                </pfe-cta>
+              </div>
+            </pfe-card>
+
+          </div>
+          <div>
+            <pfe-card class="card-3" pfe-color="lightest">
+              <h3 slot="pfe-card--header">Card 3</h3>
+              <p>Lorem, ipsum dolor sectetur adipisicing elit. <a href="http://fdsafdafdsa.com">A regular link</a>, <a
+                  href="">or a visited one</a>.
+                doloremque natus corrupti ullam numquam laudantium voluptatibus assumenda alias recusandae vel
+                temporibus a soluta?</p>
+              <div slot="pfe-card--footer">
+                <pfe-cta>
+                  <a href="#">Link 3</a>
+                </pfe-cta>
+              </div>
+            </pfe-card>
+
+          </div>
         </div>
       </pfe-band>
+
+
       <pfe-band pfe-color="lightest" pfe-size="small">
         <pfe-tabs pfe-tab-align="center">
           <pfe-tab slot="tab">
             <h3>Tab 1</h3>
           </pfe-tab>
           <pfe-tab-panel slot="panel">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequatur soluta totam labore. Dolores eum, omnis earum aliquam explicabo excepturi at voluptate, repellendus ipsam velit, nisi enim autem reiciendis reprehenderit!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequatur soluta totam labore. Dolores
+              eum, omnis earum aliquam explicabo excepturi at voluptate, repellendus ipsam velit, nisi enim autem
+              reiciendis reprehenderit!</p>
+          <div class="pfe-l-bullseye" style="--pfe-theme--container-spacer:0;">
+            <div class="pfe-l-bullseye__item"> 
+                        <pfe-cta pfe-priority="secondary">
+              <a href="#">Link 1</a>
+            </pfe-cta>
+            <pfe-cta pfe-priority="secondary">
+              <a href="#">Link 2</a>
+            </pfe-cta>
+            <pfe-cta pfe-priority="primary">
+              <a href="#">Link 3</a>
+            </pfe-cta>
+            
+            </div>
+          </div>
+
           </pfe-tab-panel>
           <pfe-tab slot="tab">
             <h3>Tab 2</h3>
           </pfe-tab>
           <pfe-tab-panel slot="panel">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non itaque asperiores aspernatur ducimus voluptatum exercitationem saepe eius voluptatem, dicta sunt ad voluptates, vitae quod autem, ipsa veritatis at sed odio.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem possimus, velit assumenda id ea dicta at deleniti neque repellendus quasi doloremque quidem quam fuga aliquam temporibus adipisci ducimus saepe ullam.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non itaque asperiores aspernatur ducimus
+              voluptatum exercitationem saepe eius voluptatem, dicta sunt ad voluptates, vitae quod autem, ipsa
+              veritatis at sed odio.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem possimus, velit assumenda id ea dicta
+              at deleniti neque repellendus quasi doloremque quidem quam fuga aliquam temporibus adipisci ducimus saepe
+              ullam.</p>
+            <pfe-cta pfe-priority="secondary">
+              <a href="#">Link 1</a>
+            </pfe-cta>
           </pfe-tab-panel>
           <pfe-tab slot="tab">
             <h3>Tab 3</h3>
           </pfe-tab>
           <pfe-tab-panel slot="panel">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet doloremque dignissimos, libero magni repudiandae quod quam optio deserunt, beatae consequatur eius officiis molestiae molestias? Adipisci suscipit beatae sed vitae consectetur.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet doloremque dignissimos, libero magni
+              repudiandae quod quam optio deserunt, beatae consequatur eius officiis molestiae molestias? Adipisci
+              suscipit beatae sed vitae consectetur.</p>
+            <pfe-cta>
+              <a href="#">Link 1</a>
+            </pfe-cta>
           </pfe-tab-panel>
         </pfe-tabs>
       </pfe-band>
@@ -224,20 +282,28 @@ export default function App() {
             <h3>Accordion header 1</h3>
           </pfe-accordion-header>
           <pfe-accordion-panel>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita obcaecati natus porro, commodi quaerat saepe minus iusto consectetur fuga consequuntur repudiandae? Quidem odio accusantium similique magni vel a, tenetur sequi.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita obcaecati natus porro, commodi quaerat
+              saepe minus iusto consectetur fuga consequuntur repudiandae? Quidem odio accusantium similique magni vel
+              a, tenetur sequi.</p>
           </pfe-accordion-panel>
           <pfe-accordion-header>
             <h3>Accordion header 2</h3>
           </pfe-accordion-header>
           <pfe-accordion-panel>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium ea totam, maxime laudantium minus modi ipsam. Dolorem suscipit possimus ullam eum pariatur? Repudiandae doloremque consectetur commodi iusto suscipit fugit nobis.</p>            
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit quidem laborum, magni quas quibusdam ipsam consectetur, quod consequuntur consequatur ipsum blanditiis animi harum quasi quam, temporibus nostrum quis explicabo magnam?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium ea totam, maxime laudantium minus
+              modi ipsam. Dolorem suscipit possimus ullam eum pariatur? Repudiandae doloremque consectetur commodi iusto
+              suscipit fugit nobis.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit quidem laborum, magni quas quibusdam
+              ipsam consectetur, quod consequuntur consequatur ipsum blanditiis animi harum quasi quam, temporibus
+              nostrum quis explicabo magnam?</p>
           </pfe-accordion-panel>
           <pfe-accordion-header>
             <h3>Accordion header 3</h3>
           </pfe-accordion-header>
           <pfe-accordion-panel>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti maxime esse, dolores ut quam, cupiditate ipsam optio at et perferendis quod eveniet veniam temporibus eius rerum fugiat sequi sapiente saepe.</p>            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti maxime esse, dolores ut quam,
+              cupiditate ipsam optio at et perferendis quod eveniet veniam temporibus eius rerum fugiat sequi sapiente
+              saepe.</p>
           </pfe-accordion-panel>
         </pfe-accordion>
       </pfe-band>
@@ -262,10 +328,13 @@ export default function App() {
             </select>
           </pfe-select>
         </div>
-        <p>PatternFly Elements are contextually aware of their surface colors. Changing the background from lightest to darkest, to saturated...</p>
+        <p>PatternFly Elements are contextually aware of their surface colors. Changing the background from lightest to
+          darkest, to saturated...</p>
 
         <pfe-card>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, nulla fugiat? Corrupti ipsa suscipit, ratione cumque natus impedit alias voluptates fugit necessitatibus debitis vitae aperiam laudantium animi commodi saepe repellat.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, nulla fugiat? Corrupti ipsa suscipit,
+            ratione cumque natus impedit alias voluptates fugit necessitatibus debitis vitae aperiam laudantium animi
+            commodi saepe repellat.</p>
         </pfe-card>
       </pfe-band>
     </section>
@@ -287,4 +356,5 @@ export default function App() {
     });
   </script>
 </body>
+
 </html>
