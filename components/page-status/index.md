@@ -16,7 +16,7 @@ tags:
 ## Overview
 Page Status creates a flag/banner on the right side of the page denoting the status of the page or document the author is viewing.
 
-<img src="page-status-demo.png" style="max-width: 100%">
+<img src="page-status-demo.png" style="max-width: 100%" alt="">
 <br>
 
 <pfe-cta>
