@@ -6,6 +6,13 @@ tags:
 ---
 <script type="module" src="/node_modules/@patternfly/pfe-button/dist/pfe-button.min.js"></script>
 
+<style>
+.overview-buttons pfe-button {
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+</style>
+
 ::: section header
 # Button
 :::
@@ -14,7 +21,7 @@ tags:
 ## Overview 
 Buttons allow users to perform an action when triggered. They feature a text label, a background or a border, and icons.
 
-<div>
+<div class="overview-buttons">
   <pfe-button>
     <button>Primary</button>
   </pfe-button>
