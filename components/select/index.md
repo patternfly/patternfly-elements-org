@@ -1,6 +1,7 @@
 ---
 layout: layout-basic.html
 title: Select
+description: Provides a way to create a stylized list of options for a form
 package: pfe-select
 tags:
   - component

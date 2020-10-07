@@ -1,6 +1,7 @@
 ---
 layout: layout-basic.html
 title: Band
+description: Provides a set of slots in which to render banded content
 package: pfe-band
 tags:
   - component

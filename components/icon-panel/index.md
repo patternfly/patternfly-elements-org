@@ -1,6 +1,7 @@
 ---
 layout: layout-basic.html
 title: Icon panel
+description: Provides a way to present text with an accompanying icon
 package: pfe-icon-panel
 tags:
   - component

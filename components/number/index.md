@@ -1,6 +1,7 @@
 ---
 layout: layout-basic.html
 title: Number
+description: Display numbers in a consistent type and format
 package: pfe-number
 tags:
   - component

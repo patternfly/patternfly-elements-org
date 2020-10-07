@@ -1,6 +1,7 @@
 ---
 layout: layout-basic.html
 title: Content set
+description: Display content as tabs or an accordion based on screen size
 package: pfe-content-set
 tags:
   - component

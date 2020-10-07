@@ -1,6 +1,7 @@
 ---
 layout: layout-basic.html
 title: Autocomplete
+description: Provides options in a dropdown list as user types in an input box
 package: pfe-autocomplete
 tags:
   - component

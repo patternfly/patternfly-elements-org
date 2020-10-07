@@ -1,6 +1,7 @@
 ---
 layout: layout-basic.html
 title: Navigation
+description: Helps a user move seamlessly through a website
 package: pfe-navigation
 tags:
   - component

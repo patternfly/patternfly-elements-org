@@ -1,6 +1,7 @@
 ---
 layout: layout-basic.html
 title: Tabs
+description: Organizes content in a contained view on the same page
 package: pfe-tabs
 tags:
   - component

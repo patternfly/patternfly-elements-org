@@ -1,6 +1,7 @@
 ---
 layout: layout-basic.html
 title: Modal
+description: Displays information or helps a user focus on a task
 package: pfe-modal
 tags:
   - component

@@ -1,6 +1,7 @@
 ---
 layout: layout-basic.html
 title: Datetime
+description: Display dates and times in a consistent format
 package: pfe-datetime
 tags:
   - component

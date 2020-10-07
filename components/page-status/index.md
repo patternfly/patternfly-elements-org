@@ -1,6 +1,7 @@
 ---
 layout: layout-basic.html
 title: Page status
+description: Creates a flag/banner on the right side of the page
 package: pfe-page-status
 tags:
   - component

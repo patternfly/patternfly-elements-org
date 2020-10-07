@@ -1,6 +1,7 @@
 ---
 layout: layout-basic.html
 title: Jump links
+description: Moves a user to content when a link is selected
 package: pfe-jump-links
 tags:
   - component

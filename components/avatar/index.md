@@ -1,6 +1,7 @@
 ---
 layout: layout-basic.html
 title: Avatar
+description: For displaying a user's avatar image
 package: pfe-avatar
 tags:
   - component

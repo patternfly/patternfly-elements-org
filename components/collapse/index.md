@@ -1,6 +1,7 @@
 ---
 layout: layout-basic.html
 title: Collapse
+description: Hide and show content
 package: pfe-collapse
 tags:
   - component

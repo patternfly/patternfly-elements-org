@@ -1,6 +1,7 @@
 ---
 layout: layout-basic.html
 title: Progress indicator
+description: Indicates that the user is waiting on a process
 package: pfe-progress-indicator
 tags:
   - component

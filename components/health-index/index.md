@@ -1,6 +1,7 @@
 ---
 layout: layout-basic.html
 title: Health index
+description: Shows a health grade
 package: pfe-health-index
 tags:
   - component

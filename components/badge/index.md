@@ -1,6 +1,7 @@
 ---
 layout: layout-basic.html
 title: Badge
+description: Provides a way to have small numerical descriptors for UI elements
 package: pfe-badge
 tags:
   - component

@@ -1,6 +1,7 @@
 ---
 layout: layout-basic.html
 title: Accordion
+description: Toggle the visibility of sections of content
 tags:
   - component
 ---

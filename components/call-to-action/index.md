@@ -1,6 +1,7 @@
 ---
 layout: layout-basic.html
 title: Call to action
+description: Directs a user to other pages or displays extra content
 package: pfe-cta
 tags:
   - component

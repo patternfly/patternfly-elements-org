@@ -1,6 +1,7 @@
 ---
 layout: layout-basic.html
 title: Card
+description: Gives a preview of information in a small layout
 tags:
   - component
 ---

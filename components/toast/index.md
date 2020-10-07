@@ -1,6 +1,7 @@
 ---
 layout: layout-basic.html
 title: Toast
+description: An alert hidden on page load and slides in/out of the view
 package: pfe-toast
 tags:
   - component

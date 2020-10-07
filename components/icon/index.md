@@ -1,6 +1,7 @@
 ---
 layout: layout-basic.html
 title: Icon
+description: Delivers icon elements that can be sized, colored, and circled
 package: pfe-icon
 tags:
   - component

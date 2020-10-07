@@ -1,6 +1,7 @@
 ---
 layout: layout-basic.html
 title: Dropdown
+description: Provides a dropdown menu of links and/or actions
 package: pfe-dropdown
 tags:
   - component

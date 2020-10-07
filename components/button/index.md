@@ -1,6 +1,7 @@
 ---
 layout: layout-basic.html
 title: Button
+description: Allows users to perform an action when triggered
 tags:
   - component
 ---
