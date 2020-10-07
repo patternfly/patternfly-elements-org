@@ -17,7 +17,7 @@ Components are interactive building blocks of our design system. Each component 
   {%- for component in collections.component -%}
   <div>
     <div class="component-preview">
-      <a href="{{ component.url }}">
+      <a href="{{ component.url }}" aria-label="{{ component.data.title }}">
         <div class="preview-image" style="background-image: url({{ component.url }}/preview.png);"></div>
       </a>
       <h3>
