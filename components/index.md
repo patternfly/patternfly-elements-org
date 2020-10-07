@@ -1,8 +1,6 @@
 ---
 layout: layout-basic.html
 title: All components
-tags:
-  - component
 ---
 
 ::: section header
@@ -17,7 +15,6 @@ Components are interactive building blocks of our design system. Each component 
 ::: section
 <div class="pfe-l-grid pfe-m-gutters pfe-m-all-6-col">
   {%- for component in collections.component -%}
-  {% if component.data.title != "All components" %}
   <div>
     <div class="component-preview">
       <a href="{{ component.url }}">
@@ -29,7 +26,6 @@ Components are interactive building blocks of our design system. Each component 
       <p>{{ component.data.description }}</p>
     </div>
   </div>
-  {% endif %}
   {%- endfor -%}
 </div>
 :::
