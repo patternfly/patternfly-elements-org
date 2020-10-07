@@ -111,22 +111,30 @@ Use this slot for anything that you want to be stuck to the base of the card. Th
 ::: section
 ## Attributes
 There are several attributes available for customizing the visual treatment of this container.
-- `pfe-color`: Options include darkest, darker, accent, complement, lighter, lightest.  The card has a default value of `#dfdfdf`. Your theme will influence these colors so check there first if you are seeing inconsistencies.
+### pfe-color
+Options include darkest, darker, accent, complement, lighter, lightest.  The card has a default value of `#dfdfdf`. Your theme will influence these colors so check there first if you are seeing inconsistencies.
 
-    | color | hex |
-    |-------|-----|
-    | lightest | <span class="color-preview" style="--bg:#ffffff"></span> #ffffff |
-    | lighter | <span class="color-preview" style="--bg:#ececec"></span> #ececec |
-    | default | <span class="color-preview" style="--bg:#dfdfdf"></span> #dfdfdf |
-    | darker | <span class="color-preview" style="--bg:#464646"></span> #464646 |
-    | darkest | <span class="color-preview" style="--bg:#131313"></span> #131313 |
-    | accent | <span class="color-preview" style="--bg:#ee0000"></span> #ee0000 |
-    | complement | <span class="color-preview" style="--bg:#0477a4"></span> #0477a4 |
+| color | hex |
+|-------|-----|
+| lightest | <span class="color-preview" style="--bg:#ffffff"></span> #ffffff |
+| lighter | <span class="color-preview" style="--bg:#ececec"></span> #ececec |
+| default | <span class="color-preview" style="--bg:#dfdfdf"></span> #dfdfdf |
+| darker | <span class="color-preview" style="--bg:#464646"></span> #464646 |
+| darkest | <span class="color-preview" style="--bg:#131313"></span> #131313 |
+| accent | <span class="color-preview" style="--bg:#ee0000"></span> #ee0000 |
+| complement | <span class="color-preview" style="--bg:#0477a4"></span> #0477a4 |
 
-- `pfe-img-src`: Optional background image applied to the entire card container.  Alignment of this image can be managed using the `--pfe-card--BackgroundPosition` variable which is set to `center center` by default.
-- `pfe-size`: Optionally adjusts the padding on the container.  Accepts: `small`.
-- `pfe-overflow`: Optionally allows an image or element to overflow the padding on the container. This property should be added to the direct child of the slotm such as on an image tag; should be added to the element that you want to overflow the container. Accepts: `top`, `right`, `bottom`, `left`.
-- `pfe-border`: Optionally apply a border color and weight to the entire card container. The default color and weight is `#d2d2d2` and `1px`, respectively.
+### pfe-img-src
+Optional background image applied to the entire card container.  Alignment of this image can be managed using the `--pfe-card--BackgroundPosition` variable which is set to `center center` by default.
+
+### pfe-size
+Optionally adjusts the padding on the container.  Accepts: `small`.
+
+### pfe-overflow
+Optionally allows an image or element to overflow the padding on the container. This property should be added to the direct child of the slotm such as on an image tag; should be added to the element that you want to overflow the container. Accepts: `top`, `right`, `bottom`, `left`.
+
+### pfe-border
+Optionally apply a border color and weight to the entire card container. The default color and weight is `#d2d2d2` and `1px`, respectively.
 :::
 
 ::: section

@@ -16,7 +16,6 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addCollection(tag, collection => {
       return collection.getFilteredByTag(tag).sort((a, b) => {
-        if (a.data.title === "All components" || b.data.title === "All components") { return 1; }
         if (a.data.title < b.data.title) { return -1; }
         if (a.data.title > b.data.title) { return 1; }
         return 0;
