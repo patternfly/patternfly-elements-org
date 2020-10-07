@@ -13,7 +13,7 @@ githubLink: https://github.com/patternfly/patternfly-elements
   <meta name="theme-color" content="#004080">
   <title>{{ title }}</title>
   <meta name="description" content="{{ title }} - {{ description }}">
-  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&family=Red+Hat+Text&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&family=Red+Hat+Text&family=Overpass+Mono&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/main.css">
   <link rel="stylesheet" type="text/css" href="/prism.css">
@@ -67,6 +67,10 @@ githubLink: https://github.com/patternfly/patternfly-elements
 &lt;/script&gt;</code></pre>
             </div>
             <div>
+              <pre><code class="language-html">&lt;h1&gt;example html&lt;/h1&gt;
+&lt;p&gt;some paragraph text&lt;/p&gt;</code></pre>
+            </div>
+            <div>
               <pre><code class="language-html">&lt;pfe-card pfe-color="lightest"&gt;
   &lt;h2 slot="pfe-card--header"&gt;Card component&lt;/h2&gt;
   &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quam alias ducimus, amet iure quae earum, saepe labore repellendus culpa ut eligendi ipsa repudiandae? Provident similique libero harum officiis atque!&lt;/p&gt;
@@ -91,6 +95,7 @@ githubLink: https://github.com/patternfly/patternfly-elements
             </div>
           </pfe-card>
         </div>
+        <br>
         <div class="pfe-l--text-align--center">
           <pfe-cta>
             <a href="components/">View the rest of the components</a>
@@ -144,13 +149,20 @@ export default function App() {
                 <p>Here is some more content</p>
               </pfe-accordion-panel>
             </pfe-accordion>
-            <div class="pfe-l-grid pfe-m-gutters pfe-m-all-6-col pfe-m-all-4-col-on-md pfe-m-all-3-col-on-lg">
-              <img src="images/react.svg" alt="">
-              <img src="images/vue.svg" alt="">
-              <img src="images/angular.svg" alt="">
+            <div class="framework-logos pfe-l--text-align--center">
+              <div>
+                <img class="react-logo" src="images/react.svg" alt="">
+              </div>
+              <div>
+                <img class="vue-logo" src="images/vue.svg" alt="">
+              </div>
+              <div>
+                <img class="angular-logo" src="images/angular.svg" alt="">
+              </div>
             </div>
           </div>
         </div>
+        <br>
         <div class="pfe-l--text-align--center">
           <pfe-cta>
             <a href="">Learn how to integrate PatternFly Elements in your application</a>
@@ -162,13 +174,15 @@ export default function App() {
       <pfe-band pfe-color="lightest">
         <div class="pfe-l-grid pfe-m-gutters">
           <h2 id="themeable" class="pfe-l-grid__item pfe-m-12-col pfe-m-9-col-on-md">Themeable</h2>
-          <pfe-select class="pfe-l-grid__item pfe-m-12-col pfe-m-3-col-on-md">
-            <select>
-              <option value="theme-1">Theme 1</option>
-              <option value="theme-2">Theme 2</option>
-              <option value="theme-3">Theme 3</option>
-            </select>
-          </pfe-select>
+          <form class="pfe-l-grid__item pfe-m-12-col pfe-m-3-col-on-md">
+            <pfe-select>
+              <select>
+                <option value="theme-1">Theme 1</option>
+                <option value="theme-2">Theme 2</option>
+                <option value="theme-3">Theme 3</option>
+              </select>
+            </pfe-select>
+          </form>
         </div>
         <p>Make PFE components your own by defining a custom theme palette. There are a variety of global CSS custom
           properties which cascade into more specific custom properties, per component.</p>
@@ -186,11 +200,8 @@ export default function App() {
                 </pfe-cta>
               </div>
             </pfe-card>
-
-
           </div>
           <div>
-
             <pfe-card class="card-2" pfe-color="accent">
               <h3 slot="pfe-card--header">Card 2</h3>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <a href="http://fdsafdafdsa.com">A regular
@@ -203,7 +214,6 @@ export default function App() {
                 </pfe-cta>
               </div>
             </pfe-card>
-
           </div>
           <div>
             <pfe-card class="card-3" pfe-color="lightest">
@@ -218,11 +228,9 @@ export default function App() {
                 </pfe-cta>
               </div>
             </pfe-card>
-
           </div>
         </div>
       </pfe-band>
-
 
       <pfe-band pfe-color="lightest" pfe-size="small">
         <pfe-tabs pfe-tab-align="center">
@@ -233,21 +241,19 @@ export default function App() {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequatur soluta totam labore. Dolores
               eum, omnis earum aliquam explicabo excepturi at voluptate, repellendus ipsam velit, nisi enim autem
               reiciendis reprehenderit!</p>
-          <div class="pfe-l-bullseye" style="--pfe-theme--container-spacer:0;">
-            <div class="pfe-l-bullseye__item"> 
-                        <pfe-cta pfe-priority="secondary">
-              <a href="#">Link 1</a>
-            </pfe-cta>
-            <pfe-cta pfe-priority="secondary">
-              <a href="#">Link 2</a>
-            </pfe-cta>
-            <pfe-cta pfe-priority="primary">
-              <a href="#">Link 3</a>
-            </pfe-cta>
-            
+            <div class="pfe-l-bullseye">
+              <div class="pfe-l-bullseye__item"> 
+                <pfe-cta pfe-priority="secondary">
+                  <a href="#">Link 1</a>
+                </pfe-cta>
+                <pfe-cta pfe-priority="secondary">
+                  <a href="#">Link 2</a>
+                </pfe-cta>
+                <pfe-cta pfe-priority="primary">
+                  <a href="#">Link 3</a>
+                </pfe-cta>
+              </div>
             </div>
-          </div>
-
           </pfe-tab-panel>
           <pfe-tab slot="tab">
             <h3>Tab 2</h3>
@@ -319,14 +325,16 @@ export default function App() {
       <pfe-band id="context-band">
         <div class="pfe-l-grid pfe-m-gutters">
           <h2 id="context" class="pfe-l-grid__item pfe-m-12-col pfe-m-9-col-on-md">Context-aware</h2>
-          <pfe-select class="pfe-l-grid__item pfe-m-12-col pfe-m-3-col-on-md">
-            <select>
-              <option value="">Select a context</option>
-              <option value="lightest">Lightest</option>
-              <option value="darkest">Darkest</option>
-              <option value="accent">Accent</option>
-            </select>
-          </pfe-select>
+          <form class="pfe-l-grid__item pfe-m-12-col pfe-m-3-col-on-md">
+            <pfe-select>
+              <select>
+                <option value="">Select a context</option>
+                <option value="lightest">Lightest</option>
+                <option value="darkest">Darkest</option>
+                <option value="accent">Accent</option>
+              </select>
+            </pfe-select>
+          </form>
         </div>
         <p>PatternFly Elements are contextually aware of their surface colors. Changing the background from lightest to
           darkest, to saturated...</p>

@@ -72,6 +72,15 @@ main.basic {
   min-width: 250px;
 }
 
+.framework-logos img {
+  width: 125px;
+  margin: 8px;
+}
+
+.framework-logos img.react-logo {
+  width: 200px;
+}
+
 .logo-bar {
   position: fixed;
   top: 0;
