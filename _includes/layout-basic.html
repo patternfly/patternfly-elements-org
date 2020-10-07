@@ -18,7 +18,7 @@ layout: layout-base.html
             <summary class="site-navigation__heading">Components</summary>
             <ul class="site-navigation__sub-menu">
               <li class="site-navigation__sub-menu__item">
-                <a class="site-navigation__sub-menu__link{% if page.url == /components %} site-navigation__sub-menu__link--active{% endif %}" href="/components/">All components</a>
+                <a class="site-navigation__sub-menu__link{% if page.url == "/components/" %} site-navigation__sub-menu__link--active{% endif %}" href="/components/">All components</a>
               </li>
               {%- for component in collections.component -%}
               <li class="site-navigation__sub-menu__item">
