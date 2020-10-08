@@ -41,10 +41,21 @@ pfe-band {
 pfe-band.header h1 {
   margin: 0;
 }
-
-pfe-band h2 {
+pfe-band h2[id] {
   font-size: 1.5rem;
   line-height: 1.9375rem;
+  font-weight: bold;
+  margin-top: 2em;
+}
+pfe-band h3[id] {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+@media (min-width: 1200px) {
+  pfe-band h2[id] {
+    font-size: 2rem;
+    line-height: 2.3125rem;
+  }
 }
 
 pfe-band h1+p,
@@ -377,12 +388,6 @@ main.basic {
   }
 }
 
-@media (min-width: 1200px) {
-  pfe-band h2 {
-    font-size: 1.75rem;
-    line-height: 2.3125rem;
-  }
-}
 
 /******* THEME 2:  purple / yellow ******/
 #themeable-section.theme-2 {
