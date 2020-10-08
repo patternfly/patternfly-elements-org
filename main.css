@@ -347,24 +347,25 @@ main.basic {
 
 /******* THEME 2:  purple / yellow ******/
 #themeable-section.theme-2 {
-  --pfe-theme--surface--border-radius : 15px;
+  --pfe-theme--surface--border-radius: 15px;
   --pfe-theme--base--heading-lg: 22px;
   --pfe-theme--color--link: #4a0c85;
   --pfe-theme--color--surface--lightest: #e8e8e7;
   --pfe-theme--color--ui-accent: #4a0c85;
 }
+
 #themeable-section.theme-2 pfe-cta[pfe-priority=secondary] {
-    --pfe-cta--BackgroundColor: #fff;
-    --pfe-cta--BorderColor: #c4c4c4;
-    --pfe-cta--Color--focus: #fff;
-    --pfe-cta--Color--hover: #fff;
+  --pfe-cta--BackgroundColor: #fff;
+  --pfe-cta--BorderColor: #c4c4c4;
+  --pfe-cta--Color--focus: #fff;
+  --pfe-cta--Color--hover: #fff;
 }
 
 #themeable-section.theme-2 pfe-cta[pfe-priority=primary]:hover,
-#themeable-section.theme-2 pfe-cta[pfe-priority=primary]:focus ,
+#themeable-section.theme-2 pfe-cta[pfe-priority=primary]:focus,
 #themeable-section.theme-2 pfe-cta[pfe-priority=secondary]:hover,
 #themeable-section.theme-2 pfe-cta[pfe-priority=secondary]:focus {
-    --pfe-cta--BackgroundColor: #363651; 
+  --pfe-cta--BackgroundColor: #363651;
 }
 
 #themeable-section.theme-2 .card-1,
@@ -386,7 +387,7 @@ main.basic {
 
 /******* THEME 2: green ******/
 #themeable-section.theme-3 {
-  --pfe-theme--surface--border-radius : 0px;
+  --pfe-theme--surface--border-radius: 0px;
   --pfe-theme--base--heading-lg: 22px;
   --pfe-theme--color--link: #4a7e4e;
   --pfe-theme--color--link--visited: #205125;
@@ -398,19 +399,20 @@ main.basic {
 #themeable-section.theme-3 .card-1,
 #themeable-section.theme-3 .card-2 {
   --pfe-theme--link-decoration--on-dark: underline;
-    --pfe-theme--color--link--visited--on-saturated: #fff;
+  --pfe-theme--color--link--visited--on-saturated: #fff;
 }
 
 #themeable-section.theme-3 pfe-card {
   --pfe-theme--color--surface--lightest: #ededed;
   --pfe-theme--color--surface--accent: #abbdb1;
-  --pfe-theme--color--surface--darkest: #263b36; 
+  --pfe-theme--color--surface--darkest: #263b36;
 }
+
 #themeable-section.theme-3 pfe-accordion {
   --pfe-accordion--Color: #477a72;
 }
 
- 
+
 
 .PFElement {
   font-family: "RedHatText", "Overpass", Overpass, Helvetica, Arial, sans-serif;
@@ -441,4 +443,27 @@ pre {
 
 code {
   font-size: 14px;
+}
+
+.angular {
+  max-width: 80px;
+  float: left;
+  margin: 15px  5px;
+  box-sizing: content-box;
+}
+
+.vue {
+  max-width: 60px;
+  float: left;
+  margin: 15px 5px;
+  padding: 15px;
+  box-sizing: content-box;
+}
+
+.react {
+  max-width: 110px;
+  float: left;
+  margin: 15px  5px;
+  padding: 0px;
+  box-sizing: content-box;
 }
