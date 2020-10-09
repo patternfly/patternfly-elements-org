@@ -10,6 +10,12 @@ title: Get started
 :::
 
 ::: section
+## Quick start
+
+If you'd like to start exploring PatternFly Elements right away, checkout our [Quick start demo page](/quick-start).
+:::
+
+::: section
 ## Install PatternFly Elements
 
 Depending on the tool you use to manage dependencies (npm, Yarn, etc.) use the command line to install the components you’d like as a dependency of your project like this:
