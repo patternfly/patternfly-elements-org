@@ -31,6 +31,21 @@ layout: layout-base.html
             </ul>
           </details>
         </li>
+        <li class="site-navigation__item">
+          <details{% if page.url contains "theming/" %} open{% endif %}>
+            <summary class="site-navigation__heading">Theming</summary>
+            <ul class="site-navigation__sub-menu">
+              <li class="site-navigation__sub-menu__item">
+                <a class="site-navigation__sub-menu__link{% if page.url == "/theming/" %} site-navigation__sub-menu__link--active{% endif %}" href="/theming/">Overview</a>
+              </li>
+              {%- for document in collections.theming -%}
+              <li class="site-navigation__sub-menu__item">
+                <a class="site-navigation__sub-menu__link{% if page.url == document.url %} site-navigation__sub-menu__link--active{% endif %}" href="{{ document.url }}">{{ document.data.title }}</a>
+              </li>
+              {%- endfor -%}
+            </ul>
+          </details>
+        </li>
       </ul>
     </nav>
   </div>
