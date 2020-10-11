@@ -1,6 +1,6 @@
 ---
 layout: layout-basic.html
-title: Theme palette
+title: Palette custom variables
 tags:
   - theming
 ---
@@ -10,8 +10,9 @@ tags:
 :::
 
 ::: section
-## Theme palette variables
-These variables are global hooks to override colors, fonts, spacing and more throughout the library of web components. Generally this is all you need, though component specific variables are also available. Feel free to copy this list and define the values needed for your site or application. Please note that the logo URL paths are empty here.
+
+## Custom palette variables
+These variables are the global hooks to override colors, fonts, spacing and more throughout the library of web components. Generally this is all you need, though component specific variables are also available. Feel free to copy this list and define the values needed for your site or application. Please note that the logo URL paths are empty here.
 
 ### Color variables 
 

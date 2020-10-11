@@ -67,7 +67,6 @@ It's also a good idea to choose some neutral colors for general UI backgrounds a
 We've exposed 7 color variants for this design system to represent your brand:
 
  - Lightest
- - Lighter
  - Base
  - Darker
  - Darkest
@@ -85,4 +84,16 @@ This can be overriden by manually applying the `pfe-theme` attribute with one of
 - `light`
 - `dark`
 - `saturated`
+
+
+*Note*: If you deviate from the general convention of the original color and you need the text to change to light, dark, or desaturated, you can also change the theme along with it. For example:
+
+```
+--pfe-theme--color--surface--accent: lightyellow;
+--pfe-theme--color--surface--accent--theme: light;
+
+--pfe-theme--color--surface--base: navy;
+--pfe-theme--color--surface--accent--theme: saturated;
+```
+
 :::
