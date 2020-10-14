@@ -32,7 +32,7 @@ We've created a palette of abstract color swatches for you to plug in your brand
 ::: section
 ## UI Colors
 
-A user interface uses color to convey:
+User interface colors are meant to provide basic colors for other page elements besides links and body text. The color is used to convey:
 
  - **Feedback**: Error and success states
  - **Information**: Charts, graphs, and wayfinding elements
@@ -44,8 +44,6 @@ We've exposed 2 UI color variants for the UI elements in the design system to re
  - Accent
 
 These colors are used throughout PatternFly Elements. **Accent** is the color which should stand out the most. For example, if your brand colors are orange and gray, we recommend you set orange as the accent color.  In doing this, that orange will now appear on primary level call-to-action buttons and other elements that need to have more weight in the visual hierarchy of the page. 
-
-UI colors are meant to provide basic colors for other page elements besides links and body text. 
 
 If you are overriding these colors, you can do so by setting the CSS variables to have new values in the stylesheet of your page or app. You'll want to override the color itself, but also the corresponding hover variant and text color (that would be used if there was text on top of this color, like a button):
 
