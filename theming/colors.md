@@ -71,9 +71,9 @@ We've exposed 7 color variants for this design system to represent your brand:
  - Complement
  - Accent
 
+:::
 
-
-
+::: section
 ### Contextually aware content
 
 Text and links, being fundamental pieces of any web property, have their own set of variables. These variables assume a light background by default, assigning typography colors that pass accessibility when placed on white or very light gray contexts. In addition, we provide contextual variables for these typographical elements for when they exist inside a dark or saturated context. Text in a black card for example would need to flip to white to pass accessibility standards while links on a blue or red shade would need to update to white in order to be visible.
@@ -126,7 +126,7 @@ If needed, you can override the `on` attribute by manually applying the `pfe-the
 
 For example: 
 
-```
+```html
 <pfe-card style="background: black;" pfe-theme="dark" >
     <p>hello world</p>
 </pfe-card>
@@ -134,11 +134,12 @@ For example:
 
 You may notice that when you place a color attribute on a layout component such as the `<pfe-card>`, the attribute `on` also appears when the component upgrades. The value of the `on` attribute is derived from the theme variable that accompanies the surface color. If you deviate from the general convention of the original color and you need the text to change to light, dark, or desaturated, you can also change the theme along with it. For example:
 
-```
+```css
 --pfe-theme--color--surface--accent: lightyellow;
 --pfe-theme--color--surface--accent--theme: light;
 
 --pfe-theme--color--surface--base: navy;
 --pfe-theme--color--surface--accent--theme: saturated;
 ```
+
 :::
