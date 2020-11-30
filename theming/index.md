@@ -16,12 +16,12 @@ Every PatternFly Element is built to automatically utilize the colors defined in
 
 Often components will make decisions about how to best utilize those colors, which is “baked in”. For example, a standard CTA, or [call-to-action component](/components/call-to-action), uses the standard link color in its default state. But, if you set the `priority` attribute value to `primary`, the CTA will make use of the accent color from the palette.
 
-<pfe-cta pfe-priority="primary">
+<pfe-cta priority="primary">
   <a href="#">Primary</a>
 </pfe-cta>
 
 ```html
-<pfe-cta pfe-priority="primary">
+<pfe-cta priority="primary">
   <a href="#">Primary</a>
 </pfe-cta>
 ```
@@ -33,7 +33,7 @@ This is because the accent color should be the brightest and boldest, and the pr
 Additionally, each component comes equipped to adjust its colors depending on where it’s placed on the page. For example, should you need to put a default CTA (which is blue) on a dark blue card, the CTA will need to adapt. You can do this by informing the component of its context (on a dark background) by giving the on attribute the value of dark.
 
 <div class="pfe-l-grid pfe-m-gutters">
-  <pfe-card class="pfe-l-grid__item pfe-m-3-col" pfe-color="complement">
+  <pfe-card class="pfe-l-grid__item pfe-m-3-col" color="complement">
     <pfe-cta>
       <a href="#">Default</a>
     </pfe-cta>
@@ -41,7 +41,7 @@ Additionally, each component comes equipped to adjust its colors depending on wh
 </div>
 
 ```html
-<pfe-card pfe-color="complement">
+<pfe-card color="complement">
   <pfe-cta>
     <a href="#">Default</a>
   </pfe-cta>
@@ -50,14 +50,14 @@ Additionally, each component comes equipped to adjust its colors depending on wh
 
 @KENDALL: I don't the content below is accurate
 
-Should you need to deviate from this color usage, and set your primary CTA to use the complement color from the palette, you may also pass a value of `complement` into the `pfe-color` attribute, like this:
+Should you need to deviate from this color usage, and set your primary CTA to use the complement color from the palette, you may also pass a value of `complement` into the `color` attribute, like this:
 
-<pfe-cta pfe-priority="primary" pfe-color="complement">
+<pfe-cta priority="primary" color="complement">
   <a href="#">Primary</a>
 </pfe-cta>
 
 ```html
-<pfe-cta pfe-priority="primary" pfe-color="complement">
+<pfe-cta priority="primary" color="complement">
   <a href="#">Primary</a>
 </pfe-cta>
 ```

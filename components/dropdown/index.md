@@ -17,18 +17,18 @@ tags:
 
 Dropdown provides a dropdown menu of links and/or actions.
 
-<pfe-dropdown pfe-label="Dropdown">
-  <pfe-dropdown-item pfe-item-type="link">
+<pfe-dropdown label="Dropdown">
+  <pfe-dropdown-item item-type="link">
     <a href="https://patternflyelements.org">PatternFly Elements</a>
   </pfe-dropdown-item>
-  <pfe-dropdown-item pfe-item-type="link">
+  <pfe-dropdown-item item-type="link">
      <a href="https://patternfly.org">PatternFly</a>
   </pfe-dropdown-item>
-  <pfe-dropdown-item pfe-item-type="link" is_disabled>
+  <pfe-dropdown-item item-type="link" is_disabled>
      <a href="https://redhat.com">Disabled link</a>
   </pfe-dropdown-item>
-  <pfe-dropdown-item pfe-item-type="separator"></pfe-dropdown-item>
-  <pfe-dropdown-item pfe-item-type="action">
+  <pfe-dropdown-item item-type="separator"></pfe-dropdown-item>
+  <pfe-dropdown-item item-type="action">
      <button>Action 1</button>
   </pfe-dropdown-item>
 </pfe-dropdown>
@@ -46,18 +46,18 @@ npm install @patternfly/{{ package }}
 ## Usage
 
 ```html
-<pfe-dropdown pfe-label="Dropdown">
-  <pfe-dropdown-item pfe-item-type="link">
+<pfe-dropdown label="Dropdown">
+  <pfe-dropdown-item item-type="link">
     <a href="https://patternflyelements.org">PatternFly Elements</a>
   </pfe-dropdown-item>
-  <pfe-dropdown-item pfe-item-type="link">
+  <pfe-dropdown-item item-type="link">
      <a href="https://patternfly.org">PatternFly</a>
   </pfe-dropdown-item>
-  <pfe-dropdown-item pfe-item-type="link" is_disabled>
+  <pfe-dropdown-item item-type="link" is_disabled>
      <a href="https://redhat.com">Disabled link</a>
   </pfe-dropdown-item>
-  <pfe-dropdown-item pfe-item-type="separator"></pfe-dropdown-item>
-  <pfe-dropdown-item pfe-item-type="action">
+  <pfe-dropdown-item item-type="separator"></pfe-dropdown-item>
+  <pfe-dropdown-item item-type="action">
      <button>Action 1</button>
   </pfe-dropdown-item>
 </pfe-dropdown>
@@ -138,12 +138,12 @@ The default slot should contain at least one link or action `pfe-dropdown-item` 
 ## Attributes
 ### pfe-dropdown
 
-* `pfe-label` : This is an optional attribute string that you can provide to describe your dropdown, which appears in the dropdown toggle.
+* `label` : This is an optional attribute string that you can provide to describe your dropdown, which appears in the dropdown toggle.
 * `is_disabled` : This is an optional attribute that you can provide to disable your dropdown. Visually the dropdown will look disabled and mouse or keyboard events will have no impact on it. 
 
 ### pfe-dropdown-item
 
-* `pfe-item-type` : This is an optional attribute string that you should provide to indicate the type of dropdown item. This drives the appropriate assignment of accessibility attributes for each type of item.
+* `item-type` : This is an optional attribute string that you should provide to indicate the type of dropdown item. This drives the appropriate assignment of accessibility attributes for each type of item.
 
  - `link` : an HTML link
  - `action` : a button that triggers some sort of action

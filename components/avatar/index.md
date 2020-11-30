@@ -45,7 +45,7 @@ npm install @patternfly/{{ package }}
 ## Usage
 
 ```html
-<pfe-avatar pfe-name="Eleanore Stillwagon"></pfe-avatar>
+<pfe-avatar name="Eleanore Stillwagon"></pfe-avatar>
 ```
 :::
 
@@ -56,19 +56,19 @@ None
 
 ::: section
 ## Attributes
-### pfe-name (observed) (required)
+### name (observed) (required)
 
 The user's name, either given name and family name, or username. When displaying a pattern, the name will be used to seed the pattern generator.
 
-### pfe-src (observed)
+### src (observed)
 
 The URL to the user's custom avatar image. It will be displayed instead of a random pattern.
 
-### pfe-pattern (observed)
+### pattern (observed)
 
 The type of pattern to display. Currently supported values are `"squares"` and `"triangles"`.
 
-### pfe-shape (observed)
+### shape (observed)
 
 The shape of the avatar itself. Supported values are `"square"` (default), `"rounded"`, and `"circle"`.
 :::

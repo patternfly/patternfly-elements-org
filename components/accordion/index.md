@@ -111,7 +111,7 @@ Add the content for your accordion panel here.
 ::: section
 ## Attributes
 
-**`pfe-theme`**
+**`context`**
 Changes the context of the accordion to one of 3 possible themes:
 - `light` (default)
 - `dark`
@@ -119,8 +119,8 @@ Changes the context of the accordion to one of 3 possible themes:
 
 This will override any context being passed from a parent component and will add a style attribute setting the `--theme` variable.
 
-**`pfe-disclosure`**
-If `pfe-accordion` has one `pfe-accordion-header`, it will get tagged with `pfe-disclosure="true"`. This applies a slightly different set of styles: chevron appears on the left side, the header has a single border on all four sides. Applying `pfe-disclosure="false"` to a `pfe-accordion` element containing only one header/panel pairing will set the element to display as a standard accordion.
+**`disclosure`**
+If `pfe-accordion` has one `pfe-accordion-header`, it will get tagged with `disclosure="true"`. This applies a slightly different set of styles: chevron appears on the left side, the header has a single border on all four sides. Applying `disclosure="false"` to a `pfe-accordion` element containing only one header/panel pairing will set the element to display as a standard accordion.
 :::
 
 ::: section

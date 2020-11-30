@@ -33,16 +33,16 @@ githubLink: https://github.com/patternfly/patternfly-elements
 
 <body unresolved>
   <header>
-    <pfe-band class="pfe-l--text-align--center" pfe-color="accent">
+    <pfe-band class="pfe-l--text-align--center" color="accent">
       <div class="pfe-l-bullseye">
         <div class="pfe-l-bullseye__item">
           <h1>{{ title }}</h1>
           <p class="tagline">{{ description }}</p>
           <div class="header-ctas">
-            <pfe-cta pfe-priority="primary">
+            <pfe-cta priority="primary">
               <a href="get-started">Get started</a>
             </pfe-cta>
-            <pfe-cta pfe-priority="secondary">
+            <pfe-cta priority="secondary">
               <a href="components">View the components</a>
             </pfe-cta>
           </div>
@@ -52,7 +52,7 @@ githubLink: https://github.com/patternfly/patternfly-elements
   </header>
   <main>
     <section>
-      <pfe-band pfe-color="lightest">
+      <pfe-band color="lightest">
         <h2 id="lightweight">Lightweight</h2>
         <h3>Install only what you need.</h3>
         <p>Pick and choose from the <a href="/components/">list of components</a>. Use them all or just one. And keep your page payloads small with PatternFly Elements because the components range from ~3 kB to ~10 kB in size minified and gzipped.</p>
@@ -68,7 +68,7 @@ githubLink: https://github.com/patternfly/patternfly-elements
 &lt;/script&gt;</code></pre>
             </div>
             <div>
-              <pre><code class="language-html">&lt;pfe-card pfe-color="lightest"&gt;
+              <pre><code class="language-html">&lt;pfe-card color="lightest"&gt;
   &lt;h2 slot="pfe-card--header"&gt;Card component&lt;/h2&gt;
   &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quam alias ducimus, amet iure quae earum, saepe labore repellendus culpa ut eligendi ipsa repudiandae? Provident similique libero harum officiis atque!&lt;/p&gt;
   &lt;div slot="pfe-card--footer"&gt;
@@ -79,7 +79,7 @@ githubLink: https://github.com/patternfly/patternfly-elements
 &lt;/pfe-card&gt;</code></pre>
             </div>
           </div>
-          <pfe-card class="pfe-l-grid__item pfe-m-12-col pfe-m-6-col-on-md pfe-m-4-col-on-lg" pfe-color="lightest"
+          <pfe-card class="pfe-l-grid__item pfe-m-12-col pfe-m-6-col-on-md pfe-m-4-col-on-lg" color="lightest"
             pfe-border>
             <h2 slot="pfe-card--header">Card component</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quam alias ducimus, amet iure quae
@@ -169,7 +169,7 @@ export default function App() {
       </pfe-band>
     </section>
     <section id="themeable-section">
-      <pfe-band pfe-color="lightest">
+      <pfe-band color="lightest">
         <div class="pfe-l-grid pfe-m-gutters">
           <h2 id="themeable" class="pfe-l-grid__item pfe-m-12-col pfe-m-9-col-on-md">Themeable</h2>
           <form class="pfe-l-grid__item pfe-m-12-col pfe-m-3-col-on-md">
@@ -186,7 +186,7 @@ export default function App() {
         <p>Use CSS custom properties to theme at a global or component level.</p>
         <div class="pfe-l-grid pfe-m-gutters pfe-m-all-4-col-on-xl pfe-m-all-6-col-on-lg pfe-m-all-6-col-on-sm">
           <div>
-            <pfe-card class="card-1" pfe-color="darkest">
+            <pfe-card class="card-1" color="darkest">
               <h3 slot="pfe-card--header">Card 1</h3>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <a href="http://fdsafdafdsa.com">A regular
                   link</a>, <a href="">or a visited one</a>. Non, qui dolore ex soluta exercitationem fuga asperiores
@@ -200,7 +200,7 @@ export default function App() {
             </pfe-card>
           </div>
           <div>
-            <pfe-card class="card-2" pfe-color="accent">
+            <pfe-card class="card-2" color="accent">
               <h3 slot="pfe-card--header">Card 2</h3>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <a href="http://fdsafdafdsa.com">A regular
                   link</a>, <a href="">or a visited one</a>. Non,
@@ -214,7 +214,7 @@ export default function App() {
             </pfe-card>
           </div>
           <div>
-            <pfe-card class="card-3" pfe-color="lightest">
+            <pfe-card class="card-3" color="lightest">
               <h3 slot="pfe-card--header">Card 3</h3>
               <p>Lorem, ipsum dolor sectetur adipisicing elit. <a href="http://fdsafdafdsa.com">A regular link</a>, <a
                   href="">or a visited one</a>.
@@ -230,7 +230,7 @@ export default function App() {
         </div>
       </pfe-band>
 
-      <pfe-band pfe-color="lightest" pfe-size="small">
+      <pfe-band color="lightest" size="small">
         <pfe-tabs pfe-tab-align="center">
           <pfe-tab slot="tab">
             <h3>Tab 1</h3>
@@ -241,13 +241,13 @@ export default function App() {
               reiciendis reprehenderit!</p>
             <div class="pfe-l-bullseye">
               <div class="pfe-l-bullseye__item"> 
-                <pfe-cta pfe-priority="secondary">
+                <pfe-cta priority="secondary">
                   <a href="#">Link 1</a>
                 </pfe-cta>
-                <pfe-cta pfe-priority="secondary">
+                <pfe-cta priority="secondary">
                   <a href="#">Link 2</a>
                 </pfe-cta>
-                <pfe-cta pfe-priority="primary">
+                <pfe-cta priority="primary">
                   <a href="#">Link 3</a>
                 </pfe-cta>
               </div>
@@ -263,7 +263,7 @@ export default function App() {
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem possimus, velit assumenda id ea dicta
               at deleniti neque repellendus quasi doloremque quidem quam fuga aliquam temporibus adipisci ducimus saepe
               ullam.</p>
-            <pfe-cta pfe-priority="secondary">
+            <pfe-cta priority="secondary">
               <a href="#">Link 1</a>
             </pfe-cta>
           </pfe-tab-panel>
@@ -280,7 +280,7 @@ export default function App() {
           </pfe-tab-panel>
         </pfe-tabs>
       </pfe-band>
-      <pfe-band pfe-color="lightest" pfe-size="small">
+      <pfe-band color="lightest" size="small">
         <pfe-accordion>
           <pfe-accordion-header>
             <h3>Accordion header 1</h3>
@@ -311,7 +311,7 @@ export default function App() {
           </pfe-accordion-panel>
         </pfe-accordion>
       </pfe-band>
-      <pfe-band pfe-color="lightest">
+      <pfe-band color="lightest">
         <div class="pfe-l--text-align--center">
           <pfe-cta>
             <a href="#">Learn more about theming PatternFly Elements</a>

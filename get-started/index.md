@@ -124,20 +124,20 @@ Add a [card component](/components/card).
 
 Attributes can be used to adjust a theme, a palette color, a priority, set default values, etc. Be sure to check out the "Attributes" section for each component to see which attributes are available.
 
-Change the priority of a [call-to-action component](/components/call-to-action) using the [pfe-priority attribute](http://localhost:8080/components/call-to-action/#pfe-priority).
+Change the priority of a [call-to-action component](/components/call-to-action) using the [priority attribute](http://localhost:8080/components/call-to-action/#priority).
 ```html
-<pfe-cta pfe-priority="primary">
+<pfe-cta priority="primary">
   <a href="https://patternflyelements.org">PatternFly Elements</a>
 </pfe-cta>
 ```
 
-<pfe-cta pfe-priority="primary">
+<pfe-cta priority="primary">
   <a href="https://patternflyelements.org">PatternFly Elements</a>
 </pfe-cta>
 
-Change the color value of a [card component](/components/card) to change its appearance using the [pfe-color attribute](http://localhost:8080/components/card/#pfe-color). 
+Change the color value of a [card component](/components/card) to change its appearance using the [color attribute](http://localhost:8080/components/card/#color). 
 ```html
-<pfe-card pfe-color="accent">
+<pfe-card color="accent">
   <h3 slot="pfe-card--header">Card header</h3>
   <p>This is the pfe-card body.</p>
   <div slot="pfe-card--footer">
@@ -146,7 +146,7 @@ Change the color value of a [card component](/components/card) to change its app
 </pfe-card>
 ```
 <div class="pfe-l-grid pfe-m-gutters">
-  <pfe-card pfe-color="accent" class="pfe-l-grid__item pfe-m-4-col">
+  <pfe-card color="accent" class="pfe-l-grid__item pfe-m-4-col">
     <h3 slot="pfe-card--header">Card header</h3>
     <p>This is the pfe-card body.</p>
     <div slot="pfe-card--footer">

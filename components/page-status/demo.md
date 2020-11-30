@@ -24,6 +24,6 @@ Sed feugiat efficitur egestas. In interdum malesuada enim vitae tempor. Cras ac 
 :::
 
 </main>
-<pfe-page-status pfe-status="critical">
+<pfe-page-status status="critical">
   Previewing
 </pfe-page-status>
