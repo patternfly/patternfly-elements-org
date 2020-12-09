@@ -34,8 +34,8 @@ h3 {
   margin-bottom: 0;
 }
 
-pfe-band {
-  --pfe-band--gutter--vertical: 8px;
+pfe-band .band-container {
+  display: grid;
 }
 
 pfe-band.header h1 {
@@ -373,6 +373,11 @@ code:not([class*="language-"]) {
   .header-ctas pfe-cta a {
     min-width: initial;
   }
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 @media (min-width: 540px) {
