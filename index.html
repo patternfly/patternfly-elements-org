@@ -27,8 +27,16 @@ githubLink: https://github.com/patternfly/patternfly-elements
     import "./node_modules/@patternfly/pfe-accordion/dist/pfe-accordion.min.js";
     import "./node_modules/@patternfly/pfe-tabs/dist/pfe-tabs.min.js";
     import "./node_modules/@patternfly/pfe-select/dist/pfe-select.min.js";
-    import "./node_modules/@patternfly/pfe-icon/dist/pfe-icon.min.js";
-    import "./main.js";
+    import PfeIcon from "./node_modules/@patternfly/pfe-icon/dist/pfe-icon.min.js";
+   
+    PfeIcon.addIconSet(
+      "fas",
+      "/icons/font-awesome/solid",
+      (iconName, setName, path) => {
+        const name = iconName.replace("fas-", "");
+        return `${path}/${name}.svg`;
+      }
+    );
   </script>
   <script src="/prism.js"></script>
 </head>
