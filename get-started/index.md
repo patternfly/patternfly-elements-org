@@ -201,4 +201,32 @@ As a last resort, you may choose to override variables with inline styles. This 
 ::: section
 ## Avoiding the flash of unstyled content (FOUC)
 PatternFly Elements provides a stylesheet that causes the `body[unresolved]` attribute to avoid the flash of unstyled content (FOUC). Adding the unresolved attribute to the `body` tag will hide the entire page until all elements have upgraded or 2 seconds have passed, whichever happens first. By including the `pfelement--noscript.css` file (wrapped in a noscript tag), all content will be revealed immediately for pages without JavaScript turned on. To customize the wait time, update the value of the `--pfe-reveal-delay` variable (default 2 second delay) and the `--pfe-reveal-duration` variable (how long the reveal animation takes, default 0.1618 seconds).
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PatternFly Elements - Avoiding the FOUC</title>
+  <!-- 
+    Add pfelement--noscript.min.css to reveal the content 
+    immediately in case JavaScript is turned off 
+  -->
+  <noscript>
+      <link href="PATH/@patternfly/pfelement/dist/pfelement--noscript.min.css" rel="stylesheet">
+  </noscript>
+  <!-- Add pfelement.min.css to the head -->
+  <link rel="stylesheet" href="PATH/@patternfly/pfelement/dist/pfelement.min.css">
+</head>
+<!-- Add the unresolved attribute to the body tag -->
+<!-- 
+  The pfelement.js base class and pfelement.min.css file handle 
+  the removal of the unresolved attribute 
+-->
+<body unresolved>
+...
+</body>
+</html>
+```
 :::

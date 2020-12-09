@@ -386,7 +386,8 @@ code:not([class*="language-"]) {
 }
 
 @media (min-width: 820px) {
-  main.basic {
+  main.basic,
+  footer.basic {
     padding-left: 17.5rem;
   }
 
@@ -510,4 +511,12 @@ pre {
 
 code {
   font-size: 14px;
+}
+
+.push-top {
+  margin-top: var(--pfe-theme--container-spacer, 0.83em);
+}
+
+.push-bottom {
+  margin-bottom: var(--pfe-theme--container-spacer, 0.83em);
 }
