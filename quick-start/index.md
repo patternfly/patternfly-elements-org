@@ -45,12 +45,12 @@ The template below utilizes [UNPKG](https://unpkg.com/) to deliver PatternFly El
 </head>
 <body unresolved>
   <header>
-    <pfe-band pfe-color="accent">
+    <pfe-band color="accent">
       <h1>PatternFly Elements</h1>
     </pfe-band>
   </header>
   <main>
-    <pfe-band pfe-color="lightest">
+    <pfe-band color="lightest">
       <h2 slot="pfe-band--header">Card components</h2>
       <div class="pfe-l-grid pfe-m-gutters pfe-m-all-4-col">
         <pfe-card>
@@ -124,7 +124,7 @@ The template below utilizes [UNPKG](https://unpkg.com/) to deliver PatternFly El
         </pfe-accordion-panel>
       </pfe-accordion>
     </pfe-band>
-    <pfe-band pfe-color="darkest">
+    <pfe-band color="darkest">
       <h2 slot="pfe-band--header">Tabs component</h2>
       <pfe-tabs>
         <pfe-tab role="heading" slot="tab" id="tab1">

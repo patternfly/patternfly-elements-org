@@ -26,16 +26,16 @@ Buttons allow users to perform an action when triggered. They feature a text lab
   <pfe-button>
     <button>Primary</button>
   </pfe-button>
-  <pfe-button pfe-variant="secondary">
+  <pfe-button variant="secondary">
     <button>Secondary</button>
   </pfe-button>
-  <pfe-button pfe-variant="tertiary">
+  <pfe-button variant="tertiary">
     <button>Tertiary</button>
   </pfe-button>
-  <pfe-button pfe-variant="danger">
+  <pfe-button variant="danger">
     <button>Danger</button>
   </pfe-button>
-  <pfe-button pfe-variant="control">
+  <pfe-button variant="control">
     <button>Control</button>
   </pfe-button>
 </div>
@@ -67,7 +67,7 @@ None
 ## Attributes
 `disabled` (observed): Disables the button
 
-`pfe-variant`: Changes the style of the button. Possible values are
+`variant`: Changes the style of the button. Possible values are
 - primary (default)
 - secondary
 - tertiary

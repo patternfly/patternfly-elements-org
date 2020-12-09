@@ -37,7 +37,7 @@ npm install @patternfly/{{ package }}
 ## Usage
 
 ```html
-<pfe-page-status pfe-status="critical">
+<pfe-page-status status="critical">
   Previewing
 </pfe-page-status>
 ```
@@ -51,7 +51,7 @@ Content in the default slot will be used as the text for the banner on the right
 
 ::: section
 ## Attributes
-### pfe-status
+### status
 Controls the background color of the banner.
 
 Values

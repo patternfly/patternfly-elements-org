@@ -99,7 +99,7 @@ npm install @patternfly/{{ package }}
               </div>
               <div class="pfe-navigation--footer">
                 <div class="pfe-navigation--column">
-                  <pfe-cta pfe-priority="primary"><a href="#">View all products</a></pfe-cta>
+                  <pfe-cta priority="primary"><a href="#">View all products</a></pfe-cta>
                 </div>
                 <div class="pfe-navigation--column">
                   <pfe-cta><a href="#">Explore our portfolio</a></pfe-cta>
@@ -275,7 +275,7 @@ Currently only supports "external"; this means if a user clicks outside the comp
 ### pfe-menu-label
 Translation for the Menu label on the main navigation dropdown.
 
-### pfe-full-width
+### full-width
 Allows the navigation to span the full width of the viewport.
 :::
 

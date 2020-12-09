@@ -105,7 +105,7 @@ Place a `<select>` element with or without `<option>`s' here.
 
 ::: section
 ## Attributes
-### pfe-invalid
+### invalid
 Changes the color and width of border-bottom of `<pfe-select>`
 
 Values

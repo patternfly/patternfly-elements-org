@@ -24,13 +24,13 @@ tags:
 Progress indicator indicates that the user is waiting on a process: page load, HTTP request, image loading, etc.
 
 <div class="overview-demo">
-  <pfe-progress-indicator pfe-indeterminate size="sm">
+  <pfe-progress-indicator indeterminate size="sm">
     <h3>My fallback loading message</h3>
   </pfe-progress-indicator>
-  <pfe-progress-indicator pfe-indeterminate size="md">
+  <pfe-progress-indicator indeterminate size="md">
     <h3>My fallback loading message</h3>
   </pfe-progress-indicator>
-  <pfe-progress-indicator pfe-indeterminate size="xl">
+  <pfe-progress-indicator indeterminate size="xl">
     <h3>My fallback loading message</h3>
   </pfe-progress-indicator>
 </div>
@@ -48,7 +48,7 @@ npm install @patternfly/{{ package }}
 ## Usage
 
 ```html
-<pfe-progress-indicator pfe-indeterminate>
+<pfe-progress-indicator indeterminate>
   <h1>My fallback loading message</h1>
 </pfe-progress-indicator>
 ```
@@ -61,7 +61,7 @@ The provided element should contain a fallback loading message if JavaScript sho
 
 ```html
 <!--The web component that upgrades to a "loader"-->
-<pfe-progress-indicator pfe-indeterminate>
+<pfe-progress-indicator indeterminate>
   <!--your custom message for JS failure AND a11y technologies-->
   <h1>
     This text will be seen if JS fails, but will be hidden on upgrade.
@@ -73,7 +73,7 @@ The provided element should contain a fallback loading message if JavaScript sho
 
 ::: section
 ## Attributes
-### pfe-indeterminate
+### indeterminate
 
 Uses the spinner style display. Currently this is on the only supported display.
 

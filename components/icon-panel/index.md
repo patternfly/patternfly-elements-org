@@ -69,8 +69,8 @@ For example, `rh-leaf` loads a leaf icon from an icon set named "rh".
 Values
 - `iconSet-iconName`
 
-### pfe-color
-The color variant to use. This draws from your theming layer to color the icon. This will set icon color or background color (if pfe-circled is true).
+### color
+The color variant to use. This draws from your theming layer to color the icon. This will set icon color or background color (if circled is true).
 
 Values
 - base
@@ -87,7 +87,7 @@ Values
 - info 
 - default
 
-### pfe-circled
+### circled
 Whether to draw a circular background behind the icon.
 :::
 

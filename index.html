@@ -27,32 +27,48 @@ githubLink: https://github.com/patternfly/patternfly-elements
     import "./node_modules/@patternfly/pfe-accordion/dist/pfe-accordion.min.js";
     import "./node_modules/@patternfly/pfe-tabs/dist/pfe-tabs.min.js";
     import "./node_modules/@patternfly/pfe-select/dist/pfe-select.min.js";
+    import "./node_modules/@patternfly/pfe-icon/dist/pfe-icon.min.js";
+    import "./main.js";
   </script>
   <script src="/prism.js"></script>
 </head>
 
 <body unresolved>
   <header>
-    <pfe-band class="pfe-l--text-align--center" pfe-color="accent">
+    <pfe-band class="pfe-l--text-align--center" color="accent">
       <div class="pfe-l-bullseye">
         <div class="pfe-l-bullseye__item">
           <h1>{{ title }}</h1>
           <p class="tagline">{{ description }}</p>
           <div class="header-ctas">
-            <pfe-cta pfe-priority="primary">
+            <pfe-cta priority="primary">
               <a href="get-started">Get started</a>
             </pfe-cta>
-            <pfe-cta pfe-priority="secondary">
+            <pfe-cta priority="secondary">
               <a href="components">View the components</a>
             </pfe-cta>
           </div>
+          <!-- <pfe-cta class="push-top">
+            <a href="{{ githubLink }}">
+              <pfe-icon size="md" style="--pfe-icon--Color: white" icon="fas-github" aria-hidden="true"></pfe-icon>&nbsp;&nbsp;Contribute on GitHub
+            </a>
+          </pfe-cta> -->
         </div>
+      </div>
+    </pfe-band>
+    <pfe-band size="small">
+      <div class="pfe-l--text-align--center">
+        <pfe-cta>
+          <a href="{{ githubLink }}">
+            <pfe-icon size="md" style="--pfe-icon--Color: #666" icon="fas-github" aria-hidden="true"></pfe-icon>&nbsp;&nbsp;Contribute on GitHub
+          </a>
+        </pfe-cta>
       </div>
     </pfe-band>
   </header>
   <main>
     <section>
-      <pfe-band pfe-color="lightest">
+      <pfe-band color="lightest">
         <h2 id="lightweight">Lightweight</h2>
         <h3>Install only what you need.</h3>
         <p>Pick and choose from the <a href="/components/">list of components</a>. Use them all or just one. And keep your page payloads small with PatternFly Elements because the components range from ~3 kB to ~10 kB in size minified and gzipped.</p>
@@ -68,7 +84,7 @@ githubLink: https://github.com/patternfly/patternfly-elements
 &lt;/script&gt;</code></pre>
             </div>
             <div>
-              <pre><code class="language-html">&lt;pfe-card pfe-color="lightest"&gt;
+              <pre><code class="language-html">&lt;pfe-card color="lightest"&gt;
   &lt;h2 slot="pfe-card--header"&gt;Card component&lt;/h2&gt;
   &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quam alias ducimus, amet iure quae earum, saepe labore repellendus culpa ut eligendi ipsa repudiandae? Provident similique libero harum officiis atque!&lt;/p&gt;
   &lt;div slot="pfe-card--footer"&gt;
@@ -79,7 +95,7 @@ githubLink: https://github.com/patternfly/patternfly-elements
 &lt;/pfe-card&gt;</code></pre>
             </div>
           </div>
-          <pfe-card class="pfe-l-grid__item pfe-m-12-col pfe-m-6-col-on-md pfe-m-4-col-on-lg" pfe-color="lightest"
+          <pfe-card class="pfe-l-grid__item pfe-m-12-col pfe-m-6-col-on-md pfe-m-4-col-on-lg" color="lightest"
             pfe-border>
             <h2 slot="pfe-card--header">Card component</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quam alias ducimus, amet iure quae
@@ -169,7 +185,7 @@ export default function App() {
       </pfe-band>
     </section>
     <section id="themeable-section">
-      <pfe-band pfe-color="lightest">
+      <pfe-band color="lightest">
         <div class="pfe-l-grid pfe-m-gutters">
           <h2 id="themeable" class="pfe-l-grid__item pfe-m-12-col pfe-m-9-col-on-md">Themeable</h2>
           <form class="pfe-l-grid__item pfe-m-12-col pfe-m-3-col-on-md">
@@ -182,11 +198,11 @@ export default function App() {
             </pfe-select>
           </form>
         </div>
-        <h3>Make PatternFly Elements components your own by defining a custom theme palette.</h3>
+        <h3 class="push-top">Make PatternFly Elements components your own by defining a custom theme palette.</h3>
         <p>Use CSS custom properties to theme at a global or component level.</p>
         <div class="pfe-l-grid pfe-m-gutters pfe-m-all-4-col-on-xl pfe-m-all-6-col-on-lg pfe-m-all-6-col-on-sm">
           <div>
-            <pfe-card class="card-1" pfe-color="darkest">
+            <pfe-card class="card-1" color="darkest">
               <h3 slot="pfe-card--header">Card 1</h3>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <a href="http://fdsafdafdsa.com">A regular
                   link</a>, <a href="">or a visited one</a>. Non, qui dolore ex soluta exercitationem fuga asperiores
@@ -200,7 +216,7 @@ export default function App() {
             </pfe-card>
           </div>
           <div>
-            <pfe-card class="card-2" pfe-color="accent">
+            <pfe-card class="card-2" color="accent">
               <h3 slot="pfe-card--header">Card 2</h3>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <a href="http://fdsafdafdsa.com">A regular
                   link</a>, <a href="">or a visited one</a>. Non,
@@ -214,7 +230,7 @@ export default function App() {
             </pfe-card>
           </div>
           <div>
-            <pfe-card class="card-3" pfe-color="lightest">
+            <pfe-card class="card-3" color="lightest">
               <h3 slot="pfe-card--header">Card 3</h3>
               <p>Lorem, ipsum dolor sectetur adipisicing elit. <a href="http://fdsafdafdsa.com">A regular link</a>, <a
                   href="">or a visited one</a>.
@@ -230,7 +246,7 @@ export default function App() {
         </div>
       </pfe-band>
 
-      <pfe-band pfe-color="lightest" pfe-size="small">
+      <pfe-band color="lightest" size="small">
         <pfe-tabs pfe-tab-align="center">
           <pfe-tab slot="tab">
             <h3>Tab 1</h3>
@@ -239,18 +255,16 @@ export default function App() {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequatur soluta totam labore. Dolores
               eum, omnis earum aliquam explicabo excepturi at voluptate, repellendus ipsam velit, nisi enim autem
               reiciendis reprehenderit!</p>
-            <div class="pfe-l-bullseye">
-              <div class="pfe-l-bullseye__item"> 
-                <pfe-cta pfe-priority="secondary">
-                  <a href="#">Link 1</a>
-                </pfe-cta>
-                <pfe-cta pfe-priority="secondary">
-                  <a href="#">Link 2</a>
-                </pfe-cta>
-                <pfe-cta pfe-priority="primary">
-                  <a href="#">Link 3</a>
-                </pfe-cta>
-              </div>
+            <div class="pfe-l--text-align--center push-top">
+              <pfe-cta priority="secondary" class="push-bottom">
+                <a href="#">Link 1</a>
+              </pfe-cta>
+              <pfe-cta priority="secondary" class="push-bottom">
+                <a href="#">Link 2</a>
+              </pfe-cta>
+              <pfe-cta priority="primary" class="push-bottom">
+                <a href="#">Link 3</a>
+              </pfe-cta>
             </div>
           </pfe-tab-panel>
           <pfe-tab slot="tab">
@@ -263,7 +277,7 @@ export default function App() {
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem possimus, velit assumenda id ea dicta
               at deleniti neque repellendus quasi doloremque quidem quam fuga aliquam temporibus adipisci ducimus saepe
               ullam.</p>
-            <pfe-cta pfe-priority="secondary">
+            <pfe-cta priority="secondary">
               <a href="#">Link 1</a>
             </pfe-cta>
           </pfe-tab-panel>
@@ -280,7 +294,7 @@ export default function App() {
           </pfe-tab-panel>
         </pfe-tabs>
       </pfe-band>
-      <pfe-band pfe-color="lightest" pfe-size="small">
+      <pfe-band color="lightest" size="small">
         <pfe-accordion>
           <pfe-accordion-header>
             <h3>Accordion header 1</h3>
@@ -311,10 +325,10 @@ export default function App() {
           </pfe-accordion-panel>
         </pfe-accordion>
       </pfe-band>
-      <pfe-band pfe-color="lightest">
+      <pfe-band color="lightest">
         <div class="pfe-l--text-align--center">
           <pfe-cta>
-            <a href="#">Learn more about theming PatternFly Elements</a>
+            <a href="/theming/">Learn more about theming PatternFly Elements</a>
           </pfe-cta>
         </div>
       </pfe-band>
@@ -334,17 +348,108 @@ export default function App() {
             </pfe-select>
           </form>
         </div>
-        <h3>Set a light, dark, or saturated context and watch PatternFly Elements respond.</h3>
+        <h3 class="push-top">Set a light, dark, or saturated context and watch PatternFly Elements respond.</h3>
         <p>Since PatternFly Elements are contextually aware of their surface colors, when you change the context, PatternFly Elements will adjust child elements with appropriate contrasting values. For example, a dark context on an element would adjust child elements to have light colored text.</p>
-        <pfe-card>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, nulla fugiat? Corrupti ipsa suscipit, ratione cumque natus impedit alias voluptates fugit necessitatibus debitis vitae aperiam laudantium animi commodi saepe repellat.</p>
-        </pfe-card>
-        
+        <br>
+        <div class="pfe-l--text-align--center push-bottom">
+          <pfe-cta priority="primary" class="push-bottom">
+            <a href="#">Primary</a>
+          </pfe-cta>
+          <pfe-cta priority="secondary" class="push-bottom">
+            <a href="#">Secondary</a>
+          </pfe-cta>
+          <pfe-cta class="push-bottom">
+            <a href="#">Default</a>
+          </pfe-cta>
+        </div>
+        <br>
+        <pfe-accordion class="push-top push-bottom">
+          <pfe-accordion-header>
+            <h4>Accordion header 1</h4>
+          </pfe-accordion-header>
+          <pfe-accordion-panel>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos eius architecto sint sed provident. Fugiat quibusdam voluptas eveniet, facere repellendus aperiam aliquid voluptate est porro magni itaque laboriosam voluptatem modi?</p>
+          </pfe-accordion-panel>
+          <pfe-accordion-header>
+            <h4>Accordion header 2</h4>
+          </pfe-accordion-header>
+          <pfe-accordion-panel>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptas tenetur possimus voluptates ipsam. Unde porro cupiditate eius sed, modi dolor fuga praesentium, rerum minima, quis iusto odio minus tempora?</p>
+          </pfe-accordion-panel>
+          <pfe-accordion-header>
+            <h4>Accordion header 3</h4>
+          </pfe-accordion-header>
+          <pfe-accordion-panel>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit eos eaque earum porro nisi. Exercitationem qui voluptate officiis debitis alias nostrum! Iusto fugit aliquam temporibus nulla? Eos veniam dolorem delectus?</p>
+          </pfe-accordion-panel>
+        </pfe-accordion>
+        <br>
+        <pfe-tabs class="push-top">
+          <pfe-tab role="heading" slot="tab">
+            <h4>Tab 1</h4>
+          </pfe-tab>
+          <pfe-tab-panel role="region" slot="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias sunt sapiente quae totam neque beatae soluta expedita sed molestiae error praesentium, quas cupiditate eaque excepturi. Laboriosam soluta totam neque magni!</p>
+          </pfe-tab-panel>
+          <pfe-tab role="heading" slot="tab">
+            <h4>Tab 2</h4>
+          </pfe-tab>
+          <pfe-tab-panel role="region" slot="panel">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt pariatur culpa mollitia, optio vitae non harum? Voluptate possimus laborum error ex, porro, ut cupiditate iusto officia facilis adipisci iure veniam.</p>
+          </pfe-tab-panel>
+          <pfe-tab role="heading" slot="tab">
+            <h4>Tab 3</h4>
+          </pfe-tab>
+          <pfe-tab-panel role="region" slot="panel">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ut quibusdam accusamus alias exercitationem sequi impedit, cumque adipisci eos, expedita porro? Ullam quam aspernatur perspiciatis. Similique neque doloremque voluptatum cupiditate?</p>
+          </pfe-tab-panel>
+        </pfe-tabs>
       </pfe-band>
     </section>
   </main>
   <footer>
-
+    <pfe-band color="darkest">
+      <div class="pfe-l-grid pfe-m-gutters pfe-m-all-4-col">
+        <div>
+          <h3>Community</h3>
+          <ul>
+            <li>
+              <a href="https://github.com/patternfly/patternfly-elements">GitHub</a>
+            </li>
+            <li>
+              <a href="https://github.com/patternfly/patternfly-elements/blob/master/CONTRIBUTING.md">Contributing</a>
+            </li>
+            <li>
+              <a href="https://github.com/patternfly/patternfly-elements/blob/master/CODE_OF_CONDUCT.md">Code of
+                conduct</a>
+            </li>
+            <li>
+              <a href="https://www.redhat.com/mailman/listinfo/patternfly-elements-contribute">Contributors email
+                list</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Resources</h3>
+          <ul>
+            <li>
+              <a href="https://patternfly.github.io/patternfly-elements/">Documentation</a>
+            </li>
+            <li>
+              <a href="https://patternfly.github.io/patternfly-elements/demo">Storybook</a>
+            </li>
+            <li>
+              <a href="https://medium.com/patternfly-elements">Medium</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <a href="https://www.netlify.com">
+            <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify">
+          </a>
+        </div>
+      </div>
+    </pfe-band>
   </footer>
   <script>
     const themeableSection = document.querySelector("#themeable-section");

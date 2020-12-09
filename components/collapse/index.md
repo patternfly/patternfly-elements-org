@@ -19,7 +19,7 @@ Collapse is used to hide and show content.
 
 <pfe-collapse>
   <pfe-collapse-toggle>
-    <pfe-cta pfe-priority="primary">
+    <pfe-cta priority="primary">
       <button>Toggle</button>
     </pfe-cta>
   </pfe-collapse-toggle>
@@ -121,23 +121,23 @@ Add the collapse panel content here.
 
 ::: section
 ## Attributes
-### pfe-animation (observed)
+### animation (observed)
 
 Can turn the animation of the panel expanding and collapsing either on or off.
-Animation of the panel defaults to true. Adding `pfe-animation` to the
-`pfe-collapse` tag will copy the `pfe-animation` attribute to the
+Animation of the panel defaults to true. Adding `animation` to the
+`pfe-collapse` tag will copy the `animation` attribute to the
 `pfe-collapse-panel`.
 
 ```html
-<pfe-collasible pfe-animation="false">
+<pfe-collasible animation="false">
   ...
 </pfe-collapse>
 ```
 
-`pfe-animation` can also be added to a `pfe-collasible-panel`.
+`animation` can also be added to a `pfe-collasible-panel`.
 
 ```html
-<pfe-collasible-panel pfe-animation="false">
+<pfe-collasible-panel animation="false">
   ...
 </pfe-collapse-panel>
 :::

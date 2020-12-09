@@ -12,7 +12,7 @@ tags:
     font-size: 4rem;
   }
 
-  main.basic pfe-icon[pfe-circled] {
+  main.basic pfe-icon[circled] {
     margin-right: 8px;
     margin-bottom: 8px;
   }
@@ -28,15 +28,15 @@ tags:
 Icon delivers icon elements that can be sized, colored, and circled. Other icon sets can also be registered and added for use.
 
 <pfe-icon icon="rh-leaf"></pfe-icon>
-<pfe-icon icon="rh-protected" pfe-color="complement"></pfe-icon>
-<pfe-icon icon="rh-code" pfe-color="accent"></pfe-icon>
-<pfe-icon icon="rh-cloud" pfe-color="darkest"></pfe-icon>
+<pfe-icon icon="rh-protected" color="complement"></pfe-icon>
+<pfe-icon icon="rh-code" color="accent"></pfe-icon>
+<pfe-icon icon="rh-cloud" color="darkest"></pfe-icon>
 
 ### Circled
-<pfe-icon icon="rh-sports-play" pfe-circled></pfe-icon>
-<pfe-icon icon="rh-fast-jet" pfe-circled pfe-color="complement"></pfe-icon>
-<pfe-icon icon="rh-shopping-cart" pfe-circled pfe-color="accent"></pfe-icon>
-<pfe-icon icon="rh-server-stack" pfe-circled pfe-color="darkest"></pfe-icon>
+<pfe-icon icon="rh-sports-play" circled></pfe-icon>
+<pfe-icon icon="rh-fast-jet" circled color="complement"></pfe-icon>
+<pfe-icon icon="rh-shopping-cart" circled color="accent"></pfe-icon>
+<pfe-icon icon="rh-server-stack" circled color="darkest"></pfe-icon>
 :::
 
 ::: section
@@ -65,31 +65,31 @@ npm install @patternfly/{{ package }}
 ### Size
 The default size is 1em, so icon size matches text size.  `2x`, etc, are multiples of font size.  `sm`, `md`, etc are fixed pixel-based sizes.
 
-<pfe-icon icon="rh-leaf" pfe-size="sm"></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-size="md"></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-size="lg"></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-size="xl"></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-size="2x"></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-size="3x"></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-size="4x"></pfe-icon>
+<pfe-icon icon="rh-leaf" size="sm"></pfe-icon>
+<pfe-icon icon="rh-leaf" size="md"></pfe-icon>
+<pfe-icon icon="rh-leaf" size="lg"></pfe-icon>
+<pfe-icon icon="rh-leaf" size="xl"></pfe-icon>
+<pfe-icon icon="rh-leaf" size="2x"></pfe-icon>
+<pfe-icon icon="rh-leaf" size="3x"></pfe-icon>
+<pfe-icon icon="rh-leaf" size="4x"></pfe-icon>
 
 ```html
-<pfe-icon icon="rh-leaf" pfe-size="sm"></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-size="md"></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-size="lg"></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-size="xl"></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-size="2x"></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-size="3x"></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-size="4x"></pfe-icon>
+<pfe-icon icon="rh-leaf" size="sm"></pfe-icon>
+<pfe-icon icon="rh-leaf" size="md"></pfe-icon>
+<pfe-icon icon="rh-leaf" size="lg"></pfe-icon>
+<pfe-icon icon="rh-leaf" size="xl"></pfe-icon>
+<pfe-icon icon="rh-leaf" size="2x"></pfe-icon>
+<pfe-icon icon="rh-leaf" size="3x"></pfe-icon>
+<pfe-icon icon="rh-leaf" size="4x"></pfe-icon>
 ```
 
 ### Circled
-<pfe-icon icon="rh-leaf" pfe-circled></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-circled pfe-color="darkest"></pfe-icon>
+<pfe-icon icon="rh-leaf" circled></pfe-icon>
+<pfe-icon icon="rh-leaf" circled color="darkest"></pfe-icon>
 
 ```html
-<pfe-icon icon="rh-leaf" pfe-circled></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-circled pfe-color="darkest"></pfe-icon>
+<pfe-icon icon="rh-leaf" circled></pfe-icon>
+<pfe-icon icon="rh-leaf" circled color="darkest"></pfe-icon>
 ```
 
 ### Colored
@@ -108,36 +108,36 @@ Supported color variants are:
 - `info`
 - `default`
 
-This draws from your theming layer to color the icon.  This will set icon color or background color (if `pfe-circled` is true).
+This draws from your theming layer to color the icon.  This will set icon color or background color (if `circled` is true).
 
-<pfe-icon icon="rh-leaf" pfe-color="base"></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-color="lightest"></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-color="lighter"></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-color="darker"></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-color="darkest"></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-color="complement"></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-color="accent"></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-color="critical"></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-color="important"></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-color="moderate"></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-color="success"></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-color="info"></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-color="default"></pfe-icon>
+<pfe-icon icon="rh-leaf" color="base"></pfe-icon>
+<pfe-icon icon="rh-leaf" color="lightest"></pfe-icon>
+<pfe-icon icon="rh-leaf" color="lighter"></pfe-icon>
+<pfe-icon icon="rh-leaf" color="darker"></pfe-icon>
+<pfe-icon icon="rh-leaf" color="darkest"></pfe-icon>
+<pfe-icon icon="rh-leaf" color="complement"></pfe-icon>
+<pfe-icon icon="rh-leaf" color="accent"></pfe-icon>
+<pfe-icon icon="rh-leaf" color="critical"></pfe-icon>
+<pfe-icon icon="rh-leaf" color="important"></pfe-icon>
+<pfe-icon icon="rh-leaf" color="moderate"></pfe-icon>
+<pfe-icon icon="rh-leaf" color="success"></pfe-icon>
+<pfe-icon icon="rh-leaf" color="info"></pfe-icon>
+<pfe-icon icon="rh-leaf" color="default"></pfe-icon>
 
 ```html
-<pfe-icon icon="rh-leaf" pfe-color="base"></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-color="lightest"></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-color="lighter"></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-color="darker"></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-color="darkest"></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-color="complement"></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-color="accent"></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-color="critical"></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-color="important"></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-color="moderate"></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-color="success"></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-color="info"></pfe-icon>
-<pfe-icon icon="rh-leaf" pfe-color="default"></pfe-icon>
+<pfe-icon icon="rh-leaf" color="base"></pfe-icon>
+<pfe-icon icon="rh-leaf" color="lightest"></pfe-icon>
+<pfe-icon icon="rh-leaf" color="lighter"></pfe-icon>
+<pfe-icon icon="rh-leaf" color="darker"></pfe-icon>
+<pfe-icon icon="rh-leaf" color="darkest"></pfe-icon>
+<pfe-icon icon="rh-leaf" color="complement"></pfe-icon>
+<pfe-icon icon="rh-leaf" color="accent"></pfe-icon>
+<pfe-icon icon="rh-leaf" color="critical"></pfe-icon>
+<pfe-icon icon="rh-leaf" color="important"></pfe-icon>
+<pfe-icon icon="rh-leaf" color="moderate"></pfe-icon>
+<pfe-icon icon="rh-leaf" color="success"></pfe-icon>
+<pfe-icon icon="rh-leaf" color="info"></pfe-icon>
+<pfe-icon icon="rh-leaf" color="default"></pfe-icon>
 ```
 :::
 
@@ -155,7 +155,7 @@ For example, `rh-leaf` loads a leaf icon from an icon set named "rh".
 Values
 - `iconSet-iconName`
 
-### pfe-size
+### size
 The default size is 1em, so icon size matches text size. `2x`, etc, are multiples of font size. `sm`, `md`, etc are fixed pixel-based sizes.
 
 Values
@@ -167,8 +167,8 @@ Values
 - 3x
 - 4x
 
-### pfe-color
-The color variant to use. This draws from your theming layer to color the icon. This will set icon color or background color (if pfe-circled is true).
+### color
+The color variant to use. This draws from your theming layer to color the icon. This will set icon color or background color (if circled is true).
 
 Values
 - base
@@ -185,7 +185,7 @@ Values
 - info 
 - default
 
-### pfe-circled
+### circled
 Whether to draw a circular background behind the icon.
 :::
 
