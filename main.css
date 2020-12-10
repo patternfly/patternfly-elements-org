@@ -541,3 +541,11 @@ code {
 .push-bottom {
   margin-bottom: var(--pfe-theme--container-spacer, 0.83em);
 }
+
+.pfe-l-grid.pfe-m-gutters > * {
+  min-width: 0;
+}
+
+pfe-card > h3 {
+  margin-top: 0;
+}
