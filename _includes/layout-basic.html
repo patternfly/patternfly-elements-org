@@ -32,6 +32,21 @@ layout: layout-base.html
           </details>
         </li>
         <li class="site-navigation__item">
+          <details{% if page.url contains "framework-integration/" %} open{% endif %}>
+            <summary class="site-navigation__heading">Framework integration</summary>
+            <ul class="site-navigation__sub-menu">
+              <li class="site-navigation__sub-menu__item">
+                <a class="site-navigation__sub-menu__link{% if page.url == "/framework-integration/" %} site-navigation__sub-menu__link--active{% endif %}" href="/framework-integration/">Overview</a>
+              </li>
+              {%- for document in collections.frameworkIntegration -%}
+              <li class="site-navigation__sub-menu__item">
+                <a class="site-navigation__sub-menu__link{% if page.url == document.url %} site-navigation__sub-menu__link--active{% endif %}" href="{{ document.url }}">{{ document.data.title }}</a>
+              </li>
+              {%- endfor -%}
+            </ul>
+          </details>
+        </li>
+        <li class="site-navigation__item">
           <details{% if page.url contains "theming/" %} open{% endif %}>
             <summary class="site-navigation__heading">Theming</summary>
             <ul class="site-navigation__sub-menu">

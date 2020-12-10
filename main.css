@@ -30,8 +30,8 @@ h1 {
 }
 
 h3 {
+  margin-top: 0.83em;
   font-weight: 500;
-  margin-bottom: 0;
 }
 
 pfe-band .band-container {
@@ -48,9 +48,16 @@ pfe-band h2[id] {
   margin-top: 2em;
 }
 pfe-band h3[id] {
-    font-size: 1.3rem;
-    font-weight: bold;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 2em;
 }
+
+pfe-band h2 + h3[id],
+pfe-band p + h3[id] {
+  margin-top: 0;
+}
+
 @media (min-width: 1200px) {
   pfe-band h2[id] {
     font-size: 2rem;
@@ -122,6 +129,10 @@ main.basic {
 
 .component-preview {
   margin-bottom: 64px;
+}
+
+.component-preview h3 {
+  margin-bottom: 0;
 }
 
 .preview-image {
@@ -375,9 +386,14 @@ code:not([class*="language-"]) {
   }
 }
 
+footer h3 {
+  margin: 0;
+}
+
 footer ul {
   list-style-type: none;
   padding: 0;
+  margin-top: 0;
 }
 
 @media (min-width: 540px) {
