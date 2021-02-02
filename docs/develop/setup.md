@@ -1,6 +1,7 @@
 ---
 layout: layout-basic.html
 title: Setup
+order: 1
 tags:
   - develop
 ---

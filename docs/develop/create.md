@@ -1,6 +1,7 @@
 ---
 layout: layout-basic.html
 title: Create a PatternFly Element
+order: 2
 tags:
   - develop
 ---

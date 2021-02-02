@@ -1,6 +1,7 @@
 ---
 layout: layout-basic.html
 title: Write your tests
+order: 7
 tags:
   - develop
 ---

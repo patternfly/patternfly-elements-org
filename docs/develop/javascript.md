@@ -1,6 +1,7 @@
 ---
 layout: layout-basic.html
 title: Write your JavaScript
+order: 6
 tags:
   - develop
 ---

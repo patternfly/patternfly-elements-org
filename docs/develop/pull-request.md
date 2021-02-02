@@ -1,6 +1,7 @@
 ---
 layout: layout-basic.html
 title: Open a pull request
+order: 8
 tags:
   - develop
 ---

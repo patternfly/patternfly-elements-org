@@ -23,6 +23,21 @@ module.exports = function (eleventyConfig) {
     });
   }
 
+  /**
+   * Collections to organize by order instead of date
+   */
+  const tagsToOrderByOrder = [
+    "develop"
+  ];
+
+  for (let i = 0; i < tagsToOrderByOrder.length; i++) {
+    const tag = tagsToOrderByOrder[i];
+
+    eleventyConfig.addCollection(tag, collection => {
+      return collection.getFilteredByTag(tag).sort((a, b) => a.data.order - b.data.order);
+    });
+  }
+
   eleventyConfig.setTemplateFormats([
     "html",
     "md",

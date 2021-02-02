@@ -1,6 +1,7 @@
 ---
 layout: layout-basic.html
 title: Develop a structure
+order: 3
 tags:
   - develop
 ---
