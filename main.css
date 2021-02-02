@@ -407,6 +407,10 @@ footer ul {
 }
 
 @media (min-width: 820px) {
+  :root {
+    --pfe-band--Padding--horizontal: 48px;
+  }
+
   main.basic,
   footer.basic {
     padding-left: 17.5rem;
@@ -455,7 +459,7 @@ footer ul {
 #themeable-section.theme-2 pfe-cta[pfe-priority=primary]:focus ,
 #themeable-section.theme-2 pfe-cta[pfe-priority=secondary]:hover,
 #themeable-section.theme-2 pfe-cta[pfe-priority=secondary]:focus {
-    --pfe-cta--BackgroundColor: #363651; 
+    --pfe-cta--BackgroundColor: #363651;
 }
 
 #themeable-section.theme-2 .card-1,
@@ -495,13 +499,11 @@ footer ul {
 #themeable-section.theme-3 pfe-card {
   --pfe-theme--color--surface--lightest: #ededed;
   --pfe-theme--color--surface--accent: #abbdb1;
-  --pfe-theme--color--surface--darkest: #263b36; 
+  --pfe-theme--color--surface--darkest: #263b36;
 }
 #themeable-section.theme-3 pfe-accordion {
   --pfe-accordion--Color: #477a72;
 }
-
- 
 
 .PFElement {
   font-family: "RedHatText", "Overpass", Overpass, Helvetica, Arial, sans-serif;
@@ -548,4 +550,15 @@ code {
 
 pfe-card > h3 {
   margin-top: 0;
+}
+
+.gist {
+  overflow: scroll;
+}
+
+blockquote {
+  background-color: #bee1f4;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 1.5rem;
 }

@@ -39,6 +39,7 @@ To get started, include a link to `pfe-layouts` in the `head` of the document.
 ```html
 <link rel="stylesheet" type="text/css" href="/path/to/pfe-layouts.min.css">
 ```
+:::
 
 ::: section
 ## Grid

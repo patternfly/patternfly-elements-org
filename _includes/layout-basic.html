@@ -64,6 +64,18 @@ layout: layout-base.html
         <li class="site-navigation__item">
           <a class="site-navigation__link{% if page.url == "/layout/" %} site-navigation__link--active{% endif %}" href="/layout/">Layout</a>
         </li>
+        <li class="site-navigation__item">
+          <details{% if page.url contains "docs/develop/" %} open{% endif %}>
+            <summary class="site-navigation__heading">Develop</summary>
+            <ul class="site-navigation__sub-menu">
+              {%- for document in collections.develop -%}
+              <li class="site-navigation__sub-menu__item">
+                <a class="site-navigation__sub-menu__link{% if page.url == document.url %} site-navigation__sub-menu__link--active{% endif %}" href="{{ document.url }}">{{ document.data.title }}</a>
+              </li>
+              {%- endfor -%}
+            </ul>
+          </details>
+        </li>
         <!-- <li class="site-navigation__item">
           <a class="site-navigation__link{% if page.url == "/about/" %} site-navigation__link--active{% endif %}" href="/about/">About PatternFly Elements</a>
         </li> -->
@@ -100,7 +112,7 @@ layout: layout-base.html
         <h3>Resources</h3>
         <ul>
           <li>
-            <a href="https://patternfly.github.io/patternfly-elements/">Documentation</a>
+            <a href="/docs">Documentation</a>
           </li>
           <li>
             <a href="https://patternfly.github.io/patternfly-elements/demo">Storybook</a>

@@ -1,6 +1,6 @@
 ---
 layout: layout-basic.html
-title: Theming overview
+title: Theming
 ---
 
 <script type="module" src="/node_modules/@patternfly/pfe-cta/dist/pfe-cta.min.js"></script>
@@ -12,6 +12,7 @@ title: Theming overview
 :::
 
 ::: section
+## Overview
 Every PatternFly Element is built to automatically utilize the colors, fonts, spacing, and more defined in the [palette](/theming/palette), which you control! Generally speaking, the only thing you will need to do is re-define some of the CSS variables to match your brand and you’re done.
 
 For this purpose, we've created a palette of CSS custom properties for you to override with your preferences on typography, color, spacing and more. Many of the components have basic theming options such as `type` or `variant` which will utilize these colors in some way. But beyond that, you may also apply a `color` attribute if you choose to add further customizations to individual components. 
