@@ -13,6 +13,7 @@ githubLink: https://github.com/patternfly/patternfly-elements
   <meta name="theme-color" content="#004080">
   <title>{{ title }}</title>
   <meta name="description" content="{{ title }} - {{ description }}">
+  <link href="/images/logo/pfe-icon-blue.svg" rel="shortcut icon">
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&family=Red+Hat+Text&family=Overpass+Mono&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/prism.css">
@@ -46,7 +47,10 @@ githubLink: https://github.com/patternfly/patternfly-elements
     <pfe-band class="pfe-l--text-align--center" color="accent">
       <div class="pfe-l-bullseye">
         <div class="pfe-l-bullseye__item">
-          <h1>{{ title }}</h1>
+          <h1 id="home-title">
+            <img src="/images/logo/pfe-icon-white-shaded.svg" alt="">
+            {{ title }}
+          </h1>
           <p class="tagline">{{ description }}</p>
           <div class="header-ctas">
             <pfe-cta priority="primary">
@@ -140,7 +144,7 @@ export default function App() {
       {data.map(accordion => 
         &lt;&gt;
           &lt;pfe-accordion-header&gt;
-            &lt;h2&gt;{accordion.header}&lt;/h2&gt;
+            &lt;h3&gt;{accordion.header}&lt;/h3&gt;
           &lt;/pfe-accordion-header&gt;
           &lt;pfe-accordion-panel&gt;
             &lt;p&gt;{accordion.panel}&lt;/p&gt;
@@ -154,13 +158,13 @@ export default function App() {
           <div class="pfe-l-grid__item pfe-m-12-col pfe-m-4-col-on-md pfe-m-5-col-on-lg">
             <pfe-accordion>
               <pfe-accordion-header>
-                <h2>Accordion header</h2>
+                <h3>Accordion header</h3>
               </pfe-accordion-header>
               <pfe-accordion-panel>
                 <p>Here is some content</p>
               </pfe-accordion-panel>
               <pfe-accordion-header>
-                <h2>Accordion header</h2>
+                <h3>Accordion header</h3>
               </pfe-accordion-header>
               <pfe-accordion-panel>
                 <p>Here is some more content</p>
@@ -168,13 +172,13 @@ export default function App() {
             </pfe-accordion>
             <div class="framework-logos pfe-l--text-align--center">
               <div>
-                <img class="react-logo" src="images/react.svg" alt="">
+                <img class="react-logo" src="images/react.svg" alt="React logo">
               </div>
               <div>
-                <img class="vue-logo" src="images/vue.svg" alt="">
+                <img class="vue-logo" src="images/vue.svg" alt="Vue logo">
               </div>
               <div>
-                <img class="angular-logo" src="images/angular.svg" alt="">
+                <img class="angular-logo" src="images/angular.svg" alt="Angular logo">
               </div>
             </div>
           </div>
@@ -192,8 +196,9 @@ export default function App() {
         <div class="pfe-l-grid pfe-m-gutters">
           <h2 id="themeable" class="pfe-l-grid__item pfe-m-12-col pfe-m-9-col-on-md">Themeable</h2>
           <form class="pfe-l-grid__item pfe-m-12-col pfe-m-3-col-on-md">
+            <label for="theme-select">Select a theme</label>
             <pfe-select>
-              <select>
+              <select id="theme-select">
                 <option value="theme-1">Theme 1</option>
                 <option value="theme-2">Theme 2</option>
                 <option value="theme-3">Theme 3</option>
@@ -207,8 +212,8 @@ export default function App() {
           <div>
             <pfe-card class="card-1" color="darkest">
               <h3 slot="pfe-card--header">Card 1</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <a href="http://fdsafdafdsa.com">A regular
-                  link</a>, <a href="">or a visited one</a>. Non, qui dolore ex soluta exercitationem fuga asperiores
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <a href="https://patternflyelements.org">A regular
+                  link</a>, <a href="https://patternflyelements.org">or a visited one</a>. Non, qui dolore ex soluta exercitationem fuga asperiores
                 natus illo nobis? Expedita modi
                 fuga qui praesentium.</p>
               <div slot="pfe-card--footer">
@@ -221,8 +226,8 @@ export default function App() {
           <div>
             <pfe-card class="card-2" color="accent">
               <h3 slot="pfe-card--header">Card 2</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <a href="http://fdsafdafdsa.com">A regular
-                  link</a>, <a href="">or a visited one</a>. Non,
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <a href="https://patternflyelements.org">A regular
+                  link</a>, <a href="https://patternflyelements.org">or a visited one</a>. Non,
                 qui dolore ex soluta exercitationem fuga asperiores natus illo nobis? Expedita modi fuga qui
                 praesentium.</p>
               <div slot="pfe-card--footer">
@@ -235,8 +240,8 @@ export default function App() {
           <div>
             <pfe-card class="card-3" color="lightest">
               <h3 slot="pfe-card--header">Card 3</h3>
-              <p>Lorem, ipsum dolor sectetur adipisicing elit. <a href="http://fdsafdafdsa.com">A regular link</a>, <a
-                  href="">or a visited one</a>.
+              <p>Lorem, ipsum dolor sectetur adipisicing elit. <a href="https://patternflyelements.org">A regular link</a>, <a
+                  href="https://patternflyelements.org">or a visited one</a>.
                 doloremque natus corrupti ullam numquam laudantium voluptatibus assumenda alias recusandae vel
                 temporibus a soluta?</p>
               <div slot="pfe-card--footer">
@@ -341,9 +346,10 @@ export default function App() {
         <div class="pfe-l-grid pfe-m-gutters">
           <h2 id="context" class="pfe-l-grid__item pfe-m-12-col pfe-m-9-col-on-md">Context-aware</h2>
           <form class="pfe-l-grid__item pfe-m-12-col pfe-m-3-col-on-md">
+            <label for="context-select">Select a context</label>
             <pfe-select>
-              <select>
-                <option value="">Select a context</option>
+              <select id="context-select">
+                <option value="">Default</option>
                 <option value="lightest">Lightest</option>
                 <option value="darkest">Darkest</option>
                 <option value="accent">Accent</option>
