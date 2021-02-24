@@ -113,7 +113,7 @@ Storybook will launch at [http://localhost:9001](http://localhost:9001).
 
 From the project's root directory, run the test command `npm test` and Web Component Tester will use Mocha and Chai to execute your tests in the browser.
 
-```
+```bash
 npm test [component-name(s)]
 ```
 
@@ -121,7 +121,7 @@ npm test [component-name(s)]
 
 Prepare your element for distribution by running the build script at the root of the project. 
 
-```
+```bash
 npm run build [component-name(s)]
 ```
 
