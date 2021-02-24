@@ -5,6 +5,7 @@ order: 3
 tags:
   - develop
 ---
+<script type="module" src="/node_modules/@patternfly/pfe-cta/dist/pfe-cta.min.js"></script>
 
 ::: section header
 # {{ title }}
@@ -134,5 +135,7 @@ There are a couple of empty getters—events, properties, and slots—which are 
 
 Now that our dev server is running and we have our element's structure, let's make it actually do something.
 
-[Next up: Write your HTML](../html)
+<pfe-cta>
+  <a href="../html">Next up: Write your HTML</a>
+</pfe-cta>
 :::

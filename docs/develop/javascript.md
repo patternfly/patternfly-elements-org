@@ -5,6 +5,7 @@ order: 6
 tags:
   - develop
 ---
+<script type="module" src="/node_modules/@patternfly/pfe-cta/dist/pfe-cta.min.js"></script>
 
 ::: section header
 # {{ title }}
@@ -311,5 +312,7 @@ export default PfeCoolElement;
 
 Now that our code works, we should outline its properties and requirements in the schema.
 
-[Next up: Write your tests](../testing)
+<pfe-cta>
+  <a href="../testing">Next up: Write your tests</a>
+</pfe-cta>
 :::

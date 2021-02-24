@@ -5,6 +5,7 @@ order: 2
 tags:
   - develop
 ---
+<script type="module" src="/node_modules/@patternfly/pfe-cta/dist/pfe-cta.min.js"></script>
 
 ::: section header
 # {{ title }}
@@ -63,5 +64,7 @@ cd elements/pfe-cool-element
 
 Open your code editor to view the structure of the element. It's important to note the `/src`, `/demo` and `/test` directories. The `/src` directory is reserved for development and you can write tests in `/test` directory. Finally, the `/demo` directory lets you preview your element locally using the pfe-cool-element.js and pfe-cool-element.umd.js files.
 
-[Next up: Structure](../structure/)
+<pfe-cta>
+    <a href="../structure">Next up: Structure</a>
+</pfe-cta>
 :::

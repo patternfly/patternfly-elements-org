@@ -5,6 +5,7 @@ order: 4
 tags:
   - develop
 ---
+<script type="module" src="/node_modules/@patternfly/pfe-cta/dist/pfe-cta.min.js"></script>
 
 ::: section header
 # {{ title }}
@@ -92,5 +93,7 @@ The gulp task takes the HTML from `/src/pfe-cool-element.html` and merges it int
 
 Now that we've added the HTML, let's style our element by updating the Sass file.
 
-[Next up: Write your Sass](../sass)
+<pfe-cta>
+  <a href="../sass">Next up: Write your Sass</a>
+</pfe-cta>
 :::

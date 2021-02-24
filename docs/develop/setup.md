@@ -5,6 +5,7 @@ order: 1
 tags:
   - develop
 ---
+<script type="module" src="/node_modules/@patternfly/pfe-cta/dist/pfe-cta.min.js"></script>
 
 ::: section header
 # {{ title }}
@@ -137,5 +138,7 @@ We've been publishing our PatternFly Elements to npm under the [PatternFly organ
 
 Now that we have understand how it all works, let's create a PatternFly Element together.
 
-[Create a PatternFly Element](/docs/develop/create)
+<pfe-cta>
+  <a href="/docs/develop/create">Create a PatternFly Element</a>
+</pfe-cta>
 :::

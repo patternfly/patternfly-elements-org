@@ -5,6 +5,7 @@ order: 5
 tags:
   - develop
 ---
+<script type="module" src="/node_modules/@patternfly/pfe-cta/dist/pfe-cta.min.js"></script>
 
 ::: section header
 # {{ title }}
@@ -169,5 +170,7 @@ Now that our `pfe-cool-element` is more appealing, we'll add the follow button's
 
 <a href="/theming/">Learn more about applying a theme.</a>
 
-[Next up: Write your JavaScript](../javascript)
+<pfe-cta>
+  <a href="../javascript">Next up: Write your JavaScript</a>
+</pfe-cta>
 :::
