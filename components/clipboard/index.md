@@ -2,10 +2,11 @@
 layout: layout-basic.html
 title: Clipboard
 description: Gives a preview of information in a small layout
+package: pfe-clipboard
 tags:
   - component
 ---
-<script type="module" src="/node_modules/@patternfly/pfe-clipboard/dist/pfe-clipboard.min.js"></script>
+<script type="module" src="/node_modules/@patternfly/{{ package }}/dist/{{ package }}.min.js"></script>
 <script type="module" src="/node_modules/@patternfly/pfe-cta/dist/pfe-cta.min.js"></script>
 <script type="module" src="/node_modules/@patternfly/pfe-icon/dist/pfe-icon.min.js"></script>
 

@@ -2,10 +2,11 @@
 layout: layout-basic.html
 title: Primary detail
 description: A primary-detail layout is an interface that shows a list of items and the corresponding details of the selected item.
+package: pfe-primary-detail
 tags:
   - component
 ---
-<script type="module" src="/node_modules/@patternfly/pfe-primary-detail/dist/pfe-primary-detail.min.js"></script>
+<script type="module" src="/node_modules/@patternfly/{{ package }}/dist/{{ package }}.min.js"></script>
 <script type="module" src="/node_modules/@patternfly/pfe-cta/dist/pfe-cta.min.js"></script>
 
 ::: section header

@@ -2,10 +2,11 @@
 layout: layout-basic.html
 title: Codeblock
 description: Render code in a styled and formatted way
+package: pfe-codeblock
 tags:
   - component
 ---
-<script type="module" src="/node_modules/@patternfly/pfe-codeblock/dist/pfe-codeblock.min.js"></script>
+<script type="module" src="/node_modules/@patternfly/{{ package }}/dist/{{ package }}.min.js"></script>
 
 ::: section header
 # {{ title }}
